@@ -72,7 +72,7 @@
 }
 
 .mainHeaderContainer .mainHeader .search {
-  flex-grow: 4;
+  flex-grow: 72;
   display: flex;
   flex-direction: row;
   gap: 10px;

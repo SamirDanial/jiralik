@@ -237,3 +237,15 @@
   color: #0E8CFF;
   font-weight: bold;
 }
+
+@media screen and (width < 1350px) {
+  .mainContent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (width < 600px) {
+  .mainContent {
+    justify-content: center;
+  }
+}
