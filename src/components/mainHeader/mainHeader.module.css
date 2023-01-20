@@ -20,6 +20,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 
 .mainHeaderContainer .mainHeader .colleagues .imageContainer {
@@ -96,6 +97,10 @@
   padding: 0px 20px;
   border-radius: 5px;
   font-size: 35px;
+}
+
+.mainHeaderContainer .mainHeader .search .plusContainer span {
+  margin-bottom: 5px;
 }
 
 .mainHeaderContainer .mainHeader .search .searchInput {

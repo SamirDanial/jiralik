@@ -30,6 +30,7 @@ import leftalignment from '../../assets/iconsImg/leftalignment.png';
 import user from '../../assets/iconsImg/user.png';
 import paidbill from '../../assets/iconsImg/paidbill.png';
 import checklist from '../../assets/iconsImg/checklist.png';
+import bulletlist from '../../assets/iconsImg/bulletlist.png';
 
 type IconType = {
   width: number;
@@ -463,6 +464,20 @@ export const CheckListIcon = ({ width, height }: IconType) => {
         priority
         src={checklist}
         alt="check list icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const BulletListIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={bulletlist}
+        alt="bullet list icon"
         width={width}
         height={height}
       />
