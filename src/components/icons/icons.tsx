@@ -16,6 +16,15 @@ import question from "../../assets/iconsImg/question.png";
 import search from "../../assets/iconsImg/search.png";
 import loudspeaker from "../../assets/iconsImg/loudspeaker.png";
 import message from "../../assets/iconsImg/message.png";
+import workflow2 from "../../assets/iconsImg/workflow3.png";
+import pen from "../../assets/iconsImg/pen2.png";
+import closetag from "../../assets/iconsImg/closetag.png";
+import loudspeaker2 from "../../assets/iconsImg/loudspeaker2.png";
+import pin from "../../assets/iconsImg/pin.png";
+import folder from "../../assets/iconsImg/folder.png";
+import floppy from "../../assets/iconsImg/floppy.png";
+import filter from "../../assets/iconsImg/filter.png";
+import sortby from '../../assets/iconsImg/sortby.png'
 
 type IconType = {
   width: number;
@@ -260,4 +269,128 @@ export const MessageIcon = ({ width, height }: IconType) => {
   );
 };
 
+export const Workflow2Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={workflow2}
+        alt="work flow2 icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
 
+export const PenIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={pen}
+        alt="pen icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const CloseTagIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={closetag}
+        alt="close tag icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const LoudSpeaker2Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={loudspeaker2}
+        alt="loud speaker2 icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const PinIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={pin}
+        alt="pin icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const FolderIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={folder}
+        alt="folder icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const FloppyIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={floppy}
+        alt="floppy icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const FilterIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={filter}
+        alt="filter icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const SortIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={sortby}
+        alt="sort icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};

@@ -1,0 +1,137 @@
+.subHeaderContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .subHeaderContainer .subHeader {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .workFlow {
+    margin-top: 5px;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .actionsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .actionsContainer .actionContainer {
+    margin-left: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .separator {
+    width: 1px;
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .humansContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .humansContainer .humanContainer {
+    position: relative;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .humansContainer .humanContainer .human {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .subHeaderContainer .subHeader .actionAndHuman .actions .humansContainer .humanContainer .batchNumber {
+    position: absolute;
+    background-color: #0E8CFF;
+    color: white;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    border-radius: 50%;
+    right: 0;
+    top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .subHeaderContainer .filters {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .subHeaderContainer .filters .filterItem {
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    gap:10;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (width < 1250px) {
+    .subHeaderContainer .subHeader {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  @media screen and (width < 620px) {
+    .subHeaderContainer .subHeader .actionAndHuman {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  
+  @media screen and (width < 550px) {
+    .subHeaderContainer .subHeader .actionAndHuman .actions .separator {
+      display: none;
+    }
+    .subHeaderContainer .subHeader .actionAndHuman .actions {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .subHeaderContainer .subHeader .actionAndHuman .actions .actionsContainer {
+      margin-left: 0;
+    }
+  
+    .subHeaderContainer .subHeader .actionAndHuman .workFlow {
+      margin-left: 25px;
+    }
+  }
