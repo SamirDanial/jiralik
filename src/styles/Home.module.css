@@ -10,3 +10,230 @@
   display: flex;
   flex-direction: column;
 }
+
+.mainContent {
+  background-color: #F9FBFE;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.mainContent .stage {
+  background-color: #EFF2F5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.mainContent .stage .stageHeader {
+  margin-top: 12px;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mainContent .stage .stageHeader .stageName {
+  font-weight: bold;
+}
+
+.mainContent .stage .stageHeader .stageItemNumber {
+  font-size: 12px;
+  margin-top: 3px;
+  margin-left: 5px;
+  color: gray
+}
+
+.mainContent .stage .stageHeader .filterIconContainer {
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.mainContent .stage .stageHeader .sortIconContainer {
+  margin-top: 1px;
+  margin-left: 3px;
+}
+
+.mainContent .stage .stageHeader .moreIconContainer {
+  margin-top: 1px;
+  margin-left: 65px;
+}
+
+.mainContent .stage .stageMembersContainer {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember {
+  width: calc(100% - 20px);
+  height: 130px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .memberType {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer .memberTypeNameStatus {
+  width: 8px;
+  height: 8px;
+  background-color: #FF3477;
+  border-radius: 50%;
+  margin-top:6px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .memberTitle {
+  font-weight: bold;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .labels {
+  margin-top:5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
+  border-radius: 10px;
+  background-color: #FFEEDE;
+  font-size: 12px;
+  padding: 0px 3px;
+  min-width: 60px;
+  min-height: 10px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .labels span:nth-of-type(2) {
+  border-radius: 10px;
+  background-color: #FFDEFC;
+  font-size: 12px;
+  padding: 0px 3px;
+  min-width: 60px;
+  min-height: 10px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .leftAlignmentContainer {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .leftAlignmentContainer span {
+  font-size: 16px;
+  color: gray;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .stageFooter {
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .stageFooter span {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color: #EBECED;
+  padding: 3px 3px;
+}
+
+.mainContent .stage .stageMembersContainer .stageMember .stageFooter .imageContainer {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mainContent .stage .listSeparator {
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+}
+
+.mainContent .stage .card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .stage .card .cardTitle {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContent .stage .card .cardTitle span:nth-of-type(1) {
+  font-size: 16px;
+}
+
+.mainContent .stage .card .cardTitle span:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #E75333;
+}
+
+.mainContent .stage .card .inputContainer {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.mainContent .stage .card .inputContainer textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border-color: #0E8CFF;
+}
+
+.mainContent .stage .card .projectAndAction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.mainContent .stage .card .projectAndAction select {
+  border-radius: 5px;
+  color: gray;
+}
+
+.mainContent .stage .card .projectAndAction button {
+  background-color: #0E8CFF;
+  color: white;
+  padding: 8px 13px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.mainContent .stage .addNewItemContainer {
+  padding: 10px 10px;
+}
+
+.mainContent .stage .addNewItemContainer .addNewItem {
+  padding: 10px 10px;
+  border: 1px solid #CBCED3;
+  border-radius: 5px;
+  color: #0E8CFF;
+  font-weight: bold;
+}

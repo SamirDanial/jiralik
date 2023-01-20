@@ -24,7 +24,12 @@ import pin from "../../assets/iconsImg/pin.png";
 import folder from "../../assets/iconsImg/folder.png";
 import floppy from "../../assets/iconsImg/floppy.png";
 import filter from "../../assets/iconsImg/filter.png";
-import sortby from '../../assets/iconsImg/sortby.png'
+import sortby from '../../assets/iconsImg/sortby.png';
+import more from '../../assets/iconsImg/more.png';
+import leftalignment from '../../assets/iconsImg/leftalignment.png';
+import user from '../../assets/iconsImg/user.png';
+import paidbill from '../../assets/iconsImg/paidbill.png';
+import checklist from '../../assets/iconsImg/checklist.png';
 
 type IconType = {
   width: number;
@@ -388,6 +393,76 @@ export const SortIcon = ({ width, height }: IconType) => {
         priority
         src={sortby}
         alt="sort icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const MoreIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={more}
+        alt="more icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const LeftAlignmentIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={leftalignment}
+        alt="left alignment icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const UserIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={user}
+        alt="user icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const PaidBillIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={paidbill}
+        alt="paid bill icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const CheckListIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={checklist}
+        alt="check list icon"
         width={width}
         height={height}
       />
