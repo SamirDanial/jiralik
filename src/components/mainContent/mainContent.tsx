@@ -16,12 +16,17 @@ import MoreOption from "../actions/moreOptionComponent/more";
 import ProjectNames from "../actions/projectNamesComponent/projectNames";
 import Filter from "../actions/filterComponent/filter";
 
-const MainContent = () => {
+type MainContentProps = {
+  toggleBackDropper: any
+}
+
+const MainContent = ({ toggleBackDropper }: MainContentProps) => {
   const [showTitles, setShowTitles] = useState<boolean>(false);
   const [showActions, setShowActions] = useState<boolean>(false);
   const [showSortBy, setShowSortBy] = useState<boolean>(false);
   const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
   return (
+    
     <div className={styles.mainContent}>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
@@ -323,7 +328,7 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-        <div className={styles.addNewItemContainer}>
+        <div className={styles.addNewItemContainer} onClick={toggleBackDropper}>
           <div className={styles.addNewItem}>
             <span>+</span>
             <span>Add Card</span>
