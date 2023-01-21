@@ -12,6 +12,7 @@ import {
   SortIcon,
   Workflow2Icon,
 } from "../icons/icons";
+import Sort from '../actions/sortComponent/sort';
 
 const SubMenu = () => {
   const [showSortBy, setShowSortBy] = useState<boolean>(false)
@@ -122,33 +123,7 @@ const SubMenu = () => {
             <span onClick={() => setShowSortBy(pre => !pre)} >Sort by</span>
             <div className={styles.sortBy}>
               {showSortBy && (
-                <div className={styles.sorts}>
-                  <div className={styles.sortHeader}>
-                    <div>
-                      <SortIcon width={20} height={20} />
-                      <span>Sort By</span>
-                    </div>
-                    <span onClick={() => setShowSortBy(false)}>X</span>
-                  </div>
-                  <div className={styles.separator}></div>
-                  <div className={styles.sortList}>
-                    <div className={styles.sort}>
-                      <span>Order</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Created date</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Due date</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Sitting count</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Move count</span>
-                    </div>
-                  </div>
-                </div>
+                <Sort top={51} left={-103} onClick={() => setShowSortBy(false)} />
               )}
             </div>
           </div>

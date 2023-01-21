@@ -1,0 +1,56 @@
+.titles {
+    position: absolute;
+    top: 90px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 180px;
+    border-radius: 5px;
+    gap: 25px;
+    box-shadow: 10px 6px 25px -7px rgba(0,0,0,0.75);
+  }
+
+  .titles .title {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .titles .title:hover {
+    color: blue;
+    font-weight: bold;
+  }
+
+  .titles .title span {
+    font-size: 12px;
+  }
+
+  .titles .title:nth-of-type(1) {
+    background-color: #FF3477;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .titles .title:nth-of-type(2) {
+    background-color: #FF9F1A;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .titles .title:nth-of-type(3) {
+    background-color: #6248FF;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .titles .title:nth-of-type(4) {
+    background-color: #967EFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }

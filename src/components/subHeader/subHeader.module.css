@@ -106,61 +106,6 @@
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
     position: relative;
   }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts {
-    position: absolute;
-    width: 200px;
-    top: 48px;
-    right: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 1px solid #E6E7E9;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortHeader {
-    padding-top: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortHeader div {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortHeader > span {
-    color: #9C9FA6;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortHeader div span {
-    font-weight: bold;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .separator {
-    width: 100%;
-    height: 1px;
-    background-color: #E6E7E9;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortList {
-    margin-top: 5px;
-    padding-left: 13px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(5) .sorts .sortList .sort {
-    font-size: 12px;
-  }
   
   @media screen and (width < 1250px) {
     .subHeaderContainer .subHeader {

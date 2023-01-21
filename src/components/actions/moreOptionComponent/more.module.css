@@ -1,0 +1,53 @@
+.actions {
+  position: absolute;
+  top: 30px;
+  width: 320px;
+  right: -13%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e6e7e9;
+}
+
+.actions .actionHeader {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actions .actionHeader span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.actions .actionHeader span:nth-of-type(2) {
+  font-weight: bold;
+  color: #9c9fa6;
+  cursor: pointer;
+}
+
+.actions .separator {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e7e9;
+}
+
+.actions .actionList {
+  margin-top: 15px;
+  padding-left: 17px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #515764;
+}
+
+.actions .actionList .action {
+  cursor: pointer;
+}

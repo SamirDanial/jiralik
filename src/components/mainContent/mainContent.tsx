@@ -11,11 +11,14 @@ import {
 } from "../icons/icons";
 import styles from "./mainContent.module.css";
 import Image from "next/image";
+import Sort from "../actions/sortComponent/sort";
+import MoreOption from "../actions/moreOptionComponent/more";
+import ProjectNames from "../actions/projectNamesComponent/projectNames";
 
 const MainContent = () => {
   const [showTitles, setShowTitles] = useState<boolean>(false);
   const [showActions, setShowActions] = useState<boolean>(false);
-  const [showSortBy, setShowSortBy] = useState<boolean>(false)
+  const [showSortBy, setShowSortBy] = useState<boolean>(false);
   return (
     <div className={styles.mainContent}>
       <div className={styles.stage}>
@@ -112,26 +115,7 @@ const MainContent = () => {
               onBlur={() => setShowTitles(false)}
               placeholder="Enter card name"
             />
-            {showTitles && (
-              <div className={styles.titles}>
-                <div className={styles.title}>
-                  <div className={styles.status}></div>
-                  <span className={styles.titleText}>ContractRM</span>
-                </div>
-                <div className={styles.title}>
-                  <div className={styles.status}></div>
-                  <span className={styles.titleText}>AgentBook</span>
-                </div>
-                <div className={styles.title}>
-                  <div className={styles.status}></div>
-                  <span className={styles.titleText}>W4RTeam</span>
-                </div>
-                <div className={styles.title}>
-                  <div className={styles.status}></div>
-                  <span className={styles.titleText}>LeadBank</span>
-                </div>
-              </div>
-            )}
+            {showTitles && <ProjectNames />}
           </div>
           <div className={styles.projectAndAction}>
             <select>
@@ -149,37 +133,13 @@ const MainContent = () => {
             <FilterIcon width={13} height={13} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={15} height={15} />
+            <SortIcon
+              onClick={() => setShowSortBy((pre) => !pre)}
+              width={15}
+              height={15}
+            />
             <div className={styles.sortBy}>
-              {showSortBy && (
-                <div className={styles.sorts}>
-                  <div className={styles.sortHeader}>
-                    <div>
-                      <SortIcon width={20} height={20} />
-                      <span>Sort By</span>
-                    </div>
-                    <span onClick={() => setShowSortBy(false)}>X</span>
-                  </div>
-                  <div className={styles.separator}></div>
-                  <div className={styles.sortList}>
-                    <div className={styles.sort}>
-                      <span>Order</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Created date</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Due date</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Sitting count</span>
-                    </div>
-                    <div className={styles.sort}>
-                      <span>Move count</span>
-                    </div>
-                  </div>
-                </div>
-              )}
+              {showSortBy && <Sort onClick={() => setShowSortBy(false)} />}
             </div>
           </div>
           <div className={styles.moreIconContainer}>
@@ -382,21 +342,7 @@ const MainContent = () => {
               height={15}
             />
           </div>
-          {showActions && <div className={styles.actions}>
-              <div className={styles.actionHeader}>
-                <span>List Actions</span>
-                <span onClick={() => setShowActions(false)}>X</span>
-              </div>
-              <div className={styles.separator}></div>
-              <div className={styles.actionList}>
-                <div className={styles.action}>
-                  <span>Move all cards in this list</span>
-                </div>
-                <div className={styles.action}>
-                  <span>Archive all cards in this list</span>
-                </div>
-              </div>
-            </div>}
+          {showActions && <MoreOption onClick={() => setShowActions(false)} />}
         </div>
         <div className={styles.stageMembersContainer}>
           <div className={styles.stageMember}>
