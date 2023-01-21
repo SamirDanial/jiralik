@@ -374,7 +374,7 @@ export const FloppyIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const FilterIcon = ({ width, height }: IconType) => {
+export const FilterIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -383,6 +383,7 @@ export const FilterIcon = ({ width, height }: IconType) => {
         alt="filter icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );

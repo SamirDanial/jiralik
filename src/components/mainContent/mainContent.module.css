@@ -64,6 +64,10 @@
   .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer {
     position: relative;
   }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .filterIconContainer {
+    position: relative;
+  }
   
   .mainContent .stage .stageHeader .stageName {
     font-weight: bold;

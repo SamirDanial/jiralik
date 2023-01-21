@@ -14,11 +14,13 @@ import Image from "next/image";
 import Sort from "../actions/sortComponent/sort";
 import MoreOption from "../actions/moreOptionComponent/more";
 import ProjectNames from "../actions/projectNamesComponent/projectNames";
+import Filter from "../actions/filterComponent/filter";
 
 const MainContent = () => {
   const [showTitles, setShowTitles] = useState<boolean>(false);
   const [showActions, setShowActions] = useState<boolean>(false);
   const [showSortBy, setShowSortBy] = useState<boolean>(false);
+  const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
   return (
     <div className={styles.mainContent}>
       <div className={styles.stage}>
@@ -130,7 +132,10 @@ const MainContent = () => {
           <span className={styles.stageName}>To Do</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={13} height={13} />
+            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={13} height={13} />
+            {
+              showFilterBy && <Filter onClick={() => setShowFilterBy(false)} />
+            }
           </div>
           <div className={styles.sortIconContainer}>
             <SortIcon

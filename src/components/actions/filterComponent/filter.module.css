@@ -1,0 +1,220 @@
+.filters {
+  position: absolute;
+  width: 300px;
+  top: 17px;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #e6e7e9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filters .filterHeader {
+  padding-top: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filters .filterHeader > span {
+  color: #9c9fa6;
+}
+
+.filters .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #e6e7e9;
+  }
+
+.filters .content {
+    padding-top: 10px;
+    padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .content .projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .content .projects .projectsHeader {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filters .content .projects .projectList {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filters .content .projects .projectList .project {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filters .content .projects .projectList .project span {
+    font-size: 12px;
+}
+
+.filters .content .projects .projectList .project:nth-of-type(1) div {
+    margin-top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF3477;
+    border-radius: 100%;
+}
+.filters .content .projects .projectList .project:nth-of-type(2) div {
+    margin-top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF9F1A;
+    border-radius: 100%;
+}
+.filters .content .projects .projectList .project:nth-of-type(3) div {
+    margin-top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #6248FF;
+    border-radius: 100%;
+}
+.filters .content .projects .projectList .project:nth-of-type(4) div {
+    margin-top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #8F76FF;
+    border-radius: 100%;
+}
+
+.filters .content .projects .showAll {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0E8CFF;
+}
+
+.filters .content .tags {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .content .tags .tagsHeader {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filters .content .tags .tagList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filters .content .tags .tagList .tag {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filters .content .tags .tagList .tag span {
+    font-size: 12px;
+}
+
+.filters .content .tags .tagList .tag:nth-of-type(1) span {
+    background-color: #FFEEDE;
+    border-radius: 15px;
+    padding: 0 4px;
+}
+.filters .content .tags .tagList .tag:nth-of-type(2) span {
+    background-color: #FFDEFC;
+    border-radius: 15px;
+    padding: 0 4px;
+}
+.filters .content .tags .tagList .tag:nth-of-type(3) span {
+    background-color: #E4F5FF;
+    border-radius: 15px;
+    padding: 0 4px;
+}
+.filters .content .tags .tagList .tag:nth-of-type(4) span {
+    background-color: #DDE6FE;
+    border-radius: 15px;
+    padding: 0 4px;
+}
+
+.filters .content .tags .showAll {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0E8CFF;
+}
+
+.filters .content .developers {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters .content .developers .developersHeader {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filters .content .developers .developerList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filters .content .developers .developerList .developer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.filters .content .developers .developerList .developer > div {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.filters .content .developers .developerList .developer span {
+    font-size: 12px;
+}
+
+.filters .content .developers .showAll {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0E8CFF;
+}
+
+.filters .actions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.filters .actions .apply span {
+    padding: 8px 15px;
+    background-color: #0E8CFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;;
+}
+
+.filters .actions .clear span {
+    color: #838790;
+    font-size: 14px;
+}
