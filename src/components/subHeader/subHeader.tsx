@@ -13,9 +13,11 @@ import {
   Workflow2Icon,
 } from "../icons/icons";
 import Sort from '../actions/sortComponent/sort';
+import Filter from '../actions/filterComponent/filter';
 
 const SubMenu = () => {
   const [showSortBy, setShowSortBy] = useState<boolean>(false)
+  const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
   return (
     <div className={styles.subHeaderContainer}>
       <div className={styles.subHeader}>
@@ -114,9 +116,12 @@ const SubMenu = () => {
             <FloppyIcon width={30} height={30} />
             <span>Views</span>
           </div>
-          <div className={styles.filterItem}>
-            <FilterIcon width={15} height={15} />
-            <span>Filter</span>
+          <div className={styles.filterItem} style={{position: 'relative'}}>
+            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={15} height={15} />
+            <span onClick={() => setShowFilterBy(pre => !pre)}>Filter</span>
+            {
+              showFilterBy && <Filter top={50} left={-225} onClick={() => setShowFilterBy(false)} />
+            }
           </div>
           <div className={styles.filterItem}>
             <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={20} height={20} />
