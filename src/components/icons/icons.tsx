@@ -35,6 +35,7 @@ import bulletlist from '../../assets/iconsImg/bulletlist.png';
 type IconType = {
   width: number;
   height: number;
+  onClick?: any;
 };
 
 export const DashboardIcon = ({ width, height }: IconType) => {
@@ -387,7 +388,7 @@ export const FilterIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const SortIcon = ({ width, height }: IconType) => {
+export const SortIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -396,12 +397,13 @@ export const SortIcon = ({ width, height }: IconType) => {
         alt="sort icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );
 };
 
-export const MoreIcon = ({ width, height }: IconType) => {
+export const MoreIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -410,6 +412,7 @@ export const MoreIcon = ({ width, height }: IconType) => {
         alt="more icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );

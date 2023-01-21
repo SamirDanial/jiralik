@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
   BulletListIcon,
   CheckListIcon,
@@ -13,7 +13,8 @@ import styles from "./mainContent.module.css";
 import Image from "next/image";
 
 const MainContent = () => {
-  const [showTitles, setShowTitles] = useState<boolean>(false)
+  const [showTitles, setShowTitles] = useState<boolean>(false);
+  const [showActions, setShowActions] = useState<boolean>(false);
   return (
     <div className={styles.mainContent}>
       <div className={styles.stage}>
@@ -105,9 +106,13 @@ const MainContent = () => {
             <span>X</span>
           </div>
           <div className={styles.inputContainer}>
-            <textarea onFocus={() => setShowTitles(true)} onBlur={() => setShowTitles(false)} placeholder="Enter card name" />
-            {
-              showTitles && <div className={styles.titles}>
+            <textarea
+              onFocus={() => setShowTitles(true)}
+              onBlur={() => setShowTitles(false)}
+              placeholder="Enter card name"
+            />
+            {showTitles && (
+              <div className={styles.titles}>
                 <div className={styles.title}>
                   <div className={styles.status}></div>
                   <span className={styles.titleText}>ContractRM</span>
@@ -125,7 +130,7 @@ const MainContent = () => {
                   <span className={styles.titleText}>LeadBank</span>
                 </div>
               </div>
-            }
+            )}
           </div>
           <div className={styles.projectAndAction}>
             <select>
@@ -339,8 +344,27 @@ const MainContent = () => {
             <SortIcon width={15} height={15} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={15} height={15} />
+            <MoreIcon
+              onClick={() => setShowActions((pre) => !pre)}
+              width={15}
+              height={15}
+            />
           </div>
+          {showActions && <div className={styles.actions}>
+              <div className={styles.actionHeader}>
+                <span>List Actions</span>
+                <span onClick={() => setShowActions(false)}>X</span>
+              </div>
+              <div className={styles.separator}></div>
+              <div className={styles.actionList}>
+                <div className={styles.action}>
+                  <span>Move all cards in this list</span>
+                </div>
+                <div className={styles.action}>
+                  <span>Archive all cards in this list</span>
+                </div>
+              </div>
+            </div>}
         </div>
         <div className={styles.stageMembersContainer}>
           <div className={styles.stageMember}>
