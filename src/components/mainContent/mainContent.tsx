@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import {
-    BulletListIcon,
+  BulletListIcon,
   CheckListIcon,
   FilterIcon,
   LeftAlignmentIcon,
@@ -12,6 +13,7 @@ import styles from "./mainContent.module.css";
 import Image from "next/image";
 
 const MainContent = () => {
+  const [showTitles, setShowTitles] = useState<boolean>(false)
   return (
     <div className={styles.mainContent}>
       <div className={styles.stage}>
@@ -103,7 +105,27 @@ const MainContent = () => {
             <span>X</span>
           </div>
           <div className={styles.inputContainer}>
-            <textarea placeholder="Enter card name" />
+            <textarea onFocus={() => setShowTitles(true)} onBlur={() => setShowTitles(false)} placeholder="Enter card name" />
+            {
+              showTitles && <div className={styles.titles}>
+                <div className={styles.title}>
+                  <div className={styles.status}></div>
+                  <span className={styles.titleText}>ContractRM</span>
+                </div>
+                <div className={styles.title}>
+                  <div className={styles.status}></div>
+                  <span className={styles.titleText}>AgentBook</span>
+                </div>
+                <div className={styles.title}>
+                  <div className={styles.status}></div>
+                  <span className={styles.titleText}>W4RTeam</span>
+                </div>
+                <div className={styles.title}>
+                  <div className={styles.status}></div>
+                  <span className={styles.titleText}>LeadBank</span>
+                </div>
+              </div>
+            }
           </div>
           <div className={styles.projectAndAction}>
             <select>
