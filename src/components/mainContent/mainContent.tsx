@@ -15,6 +15,7 @@ import Image from "next/image";
 const MainContent = () => {
   const [showTitles, setShowTitles] = useState<boolean>(false);
   const [showActions, setShowActions] = useState<boolean>(false);
+  const [showSortBy, setShowSortBy] = useState<boolean>(false)
   return (
     <div className={styles.mainContent}>
       <div className={styles.stage}>
@@ -148,7 +149,38 @@ const MainContent = () => {
             <FilterIcon width={13} height={13} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={15} height={15} />
+            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={15} height={15} />
+            <div className={styles.sortBy}>
+              {showSortBy && (
+                <div className={styles.sorts}>
+                  <div className={styles.sortHeader}>
+                    <div>
+                      <SortIcon width={20} height={20} />
+                      <span>Sort By</span>
+                    </div>
+                    <span onClick={() => setShowSortBy(false)}>X</span>
+                  </div>
+                  <div className={styles.separator}></div>
+                  <div className={styles.sortList}>
+                    <div className={styles.sort}>
+                      <span>Order</span>
+                    </div>
+                    <div className={styles.sort}>
+                      <span>Created date</span>
+                    </div>
+                    <div className={styles.sort}>
+                      <span>Due date</span>
+                    </div>
+                    <div className={styles.sort}>
+                      <span>Sitting count</span>
+                    </div>
+                    <div className={styles.sort}>
+                      <span>Move count</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
           <div className={styles.moreIconContainer}>
             <MoreIcon width={15} height={15} />

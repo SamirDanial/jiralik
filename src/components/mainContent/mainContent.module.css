@@ -61,6 +61,67 @@
     flex-direction: row;
   }
 
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer {
+    position: relative;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts {
+    position: absolute;
+    width: 200px;
+    top: 17px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #E6E7E9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortHeader {
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortHeader div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortHeader > span {
+    color: #9C9FA6;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortHeader div span {
+    font-weight: bold;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #E6E7E9;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortList {
+    margin-top: 5px;
+    padding-left: 13px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer .sortBy .sorts .sortList .sort {
+    font-size: 12px;
+  }
+
+
+
   .mainContent .stage:nth-of-type(3) .stageHeader .actions {
     position: absolute;
     top: 30px;
