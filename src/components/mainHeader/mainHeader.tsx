@@ -2,7 +2,11 @@ import { QuestionIcon, SingleDownArrowIcon, SearchIcon, LoudSpeakerIcon, Calenda
 import styles from './mainHeader.module.css'
 import Image from 'next/image'
 
-const MainHeader = () => {
+type MainHeaderType = {
+  toggleBackDropper: any;
+}
+
+const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
     return(
         <div className={styles.mainHeaderContainer}>
             <div className={styles.mainHeader}>
@@ -44,7 +48,7 @@ const MainHeader = () => {
                 <div className={styles.questionIconContainer}>
                   <QuestionIcon width={20} height={20} />
                 </div>
-                <div className={styles.plusContainer}>
+                <div className={styles.plusContainer} onClick={toggleBackDropper}>
                   <span>+</span>
                 </div>
                 <div className={styles.searchInput}>

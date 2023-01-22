@@ -15,7 +15,11 @@ import {
 import Sort from '../actions/sortComponent/sort';
 import Filter from '../actions/filterComponent/filter';
 
-const SubMenu = () => {
+type SubMenuType = {
+  toggleBackDropper: any;
+}
+
+const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
   const [showSortBy, setShowSortBy] = useState<boolean>(false)
   const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
   return (
@@ -34,7 +38,7 @@ const SubMenu = () => {
                 <PenIcon width={40} height={40} />
               </div>
               <div className={styles.actionContainer}>
-                <CloseTagIcon width={40} height={40} />
+                <CloseTagIcon onClick={toggleBackDropper} width={40} height={40} />
               </div>
               <div className={styles.actionContainer}>
                 <LoudSpeaker2Icon width={40} height={40} />

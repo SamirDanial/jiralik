@@ -89,6 +89,7 @@
 }
 
 .mainHeaderContainer .mainHeader .search .plusContainer {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -304,7 +304,7 @@ export const PenIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const CloseTagIcon = ({ width, height }: IconType) => {
+export const CloseTagIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -313,6 +313,7 @@ export const CloseTagIcon = ({ width, height }: IconType) => {
         alt="close tag icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );

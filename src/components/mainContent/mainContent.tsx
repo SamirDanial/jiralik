@@ -17,7 +17,7 @@ import ProjectNames from "../actions/projectNamesComponent/projectNames";
 import Filter from "../actions/filterComponent/filter";
 
 type MainContentProps = {
-  toggleBackDropper: any
+  toggleBackDropper?: any
 }
 
 const MainContent = ({ toggleBackDropper }: MainContentProps) => {
@@ -328,7 +328,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
           </div>
         </div>
-        <div className={styles.addNewItemContainer} onClick={toggleBackDropper}>
+        <div className={styles.addNewItemContainer}>
           <div className={styles.addNewItem}>
             <span>+</span>
             <span>Add Card</span>
