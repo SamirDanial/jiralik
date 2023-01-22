@@ -114,7 +114,6 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
           </div>
         </div>
-        <div className={styles.listSeparator}></div>
         <Card />
       </div>
       <div className={styles.stage}>

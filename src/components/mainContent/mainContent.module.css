@@ -202,12 +202,6 @@
     overflow: hidden;
   }
   
-  .mainContent .stage .listSeparator {
-    width: 100%;
-    height: 1px;
-    background-color: blue;
-  }
-  
   @media screen and (width < 1350px) {
     .mainContent {
       flex-wrap: wrap;
