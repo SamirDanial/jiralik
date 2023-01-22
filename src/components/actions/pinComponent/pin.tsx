@@ -1,4 +1,4 @@
-import { CheckListIcon, LeftAlignmentIcon, PaidBillIcon, PinIcon, SearchIcon, UserIcon } from "@/components/icons/icons";
+import { CheckListIcon, LeftAlignmentIcon, PaidBillIcon, PinIcon, SearchIcon, UserIcon, XMarkCIcon } from "@/components/icons/icons";
 import styles from "./pin.module.css";
 import Image from 'next/image';
 
@@ -19,7 +19,7 @@ const Pin = ({ onClick, top, left, right }: PinProps) => {
           </div>
           <span>Pinned Card</span>
         </div>
-        <span onClick={onClick}>X</span>
+        <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.viewContent}>

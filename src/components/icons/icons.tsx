@@ -31,7 +31,7 @@ import user from "../../assets/iconsImg/user.png";
 import paidbill from "../../assets/iconsImg/paidbill.png";
 import checklist from "../../assets/iconsImg/checklist.png";
 import bulletlist from "../../assets/iconsImg/bulletlist.png";
-import { TrashIcon, ArchiveBoxIcon, ClockIcon } from "@heroicons/react/24/outline";
+import { TrashIcon, ArchiveBoxIcon, ClockIcon, ListBulletIcon, QueueListIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 type IconType = {
   width: number;
@@ -491,4 +491,20 @@ export const ArchiveIcon = ({ width, height, onClick }: IconType) => {
 
 export const SnoozeIcon = ({ width, height, onClick }: IconType) => {
   return <ClockIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const ListIcon = ({ width, height, onClick }: IconType) => {
+  return <ListBulletIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const QueueIcon = ({ width, height, onClick }: IconType) => {
+  return <QueueListIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const PlusCIcon = ({ width, height, onClick }: IconType) => {
+  return <PlusIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const XMarkCIcon = ({ width, height, onClick }: IconType) => {
+  return <XMarkIcon onClick={onClick} width={width} height={height} />;
 };

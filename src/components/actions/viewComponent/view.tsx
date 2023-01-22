@@ -1,4 +1,4 @@
-import { FloppyIcon, TrashBinIcon } from "@/components/icons/icons";
+import { FloppyIcon, TrashBinIcon, XMarkCIcon } from "@/components/icons/icons";
 import styles from "./view.module.css";
 
 type ViewProps = {
@@ -17,7 +17,7 @@ const View = ({ onClick, toggleBackDropper, top, left, right }: ViewProps) => {
           <FloppyIcon width={30} height={30} />
           <span>Views</span>
         </div>
-        <span onClick={onClick}>X</span>
+        <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.viewContent}>

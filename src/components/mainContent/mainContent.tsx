@@ -4,10 +4,13 @@ import {
   CheckListIcon,
   FilterIcon,
   LeftAlignmentIcon,
+  ListIcon,
   MoreIcon,
   PaidBillIcon,
+  QueueIcon,
   SortIcon,
   UserIcon,
+  XMarkCIcon,
 } from "../icons/icons";
 import styles from "./mainContent.module.css";
 import Image from "next/image";
@@ -114,7 +117,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
         <div className={styles.card}>
           <div className={styles.cardTitle}>
             <span>Card Title</span>
-            <span>X</span>
+            <span><XMarkCIcon width={24} height={24} /></span>
           </div>
           <div className={styles.inputContainer}>
             <textarea
@@ -846,10 +849,10 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
         </div>
       </div>
       <div className={styles.todoList}>
-        <CheckListIcon width={20} height={20} />
+        <ListIcon width={20} height={20} />
       </div>
       <div className={styles.taskList}>
-        <BulletListIcon width={20} height={20} />
+        <QueueIcon width={20} height={20} />
       </div>
     </div>
   );

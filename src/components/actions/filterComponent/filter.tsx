@@ -1,3 +1,4 @@
+import { XMarkCIcon } from "@/components/icons/icons";
 import styles from "./filter.module.css";
 import Image from "next/image";
 
@@ -15,7 +16,7 @@ const Filter = ({ onClick, top, left, right }: FilterProps) => {
         <div>
           <span>Filter By</span>
         </div>
-        <span onClick={onClick}>X</span>
+        <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.content}>

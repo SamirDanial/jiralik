@@ -1,3 +1,4 @@
+import { XMarkCIcon } from "@/components/icons/icons";
 import styles from "./more.module.css";
 
 type MoreOptionProps = {
@@ -12,7 +13,7 @@ const MoreOption = ({ onClick, top, left, right }: MoreOptionProps) => {
     <div className={styles.actions}>
       <div className={styles.actionHeader}>
         <span>List Actions</span>
-        <span onClick={onClick}>X</span>
+        <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.actionList}>

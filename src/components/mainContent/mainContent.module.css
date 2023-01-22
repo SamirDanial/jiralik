@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   }
 
   .mainContent .taskList {
@@ -42,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   }
   
   .mainContent .stage {
@@ -268,6 +270,7 @@
     background-position: right 0.8rem center;
     background-size: 1em;
     color: gray;
+    padding-left: 10px;
   }
 
   .mainContent .stage .card .projectAndAction select:focus-visible {

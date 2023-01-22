@@ -6,6 +6,7 @@ import {
   PaidBillIcon,
   SearchIcon,
   UserIcon,
+  XMarkCIcon,
 } from "@/components/icons/icons";
 import styles from "./archive.module.css";
 import Image from "next/image";
@@ -45,7 +46,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
             <span>Snooze</span>
           </div>
         </div>
-        <span onClick={onClick}>X</span>
+        <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.viewContent}>

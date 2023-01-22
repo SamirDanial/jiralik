@@ -100,10 +100,6 @@
   font-size: 35px;
 }
 
-.mainHeaderContainer .mainHeader .search .plusContainer span {
-  margin-bottom: 5px;
-}
-
 .mainHeaderContainer .mainHeader .search .searchInput {
   flex-grow: 1;
   position: relative;

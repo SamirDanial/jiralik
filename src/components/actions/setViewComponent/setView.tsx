@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { FloppyIcon, SingleDownArrowIcon } from "@/components/icons/icons";
+import { FloppyIcon, SingleDownArrowIcon, XMarkCIcon } from "@/components/icons/icons";
 import styles from "./setView.module.css";
 
 type SetViewProps = {
@@ -22,7 +22,7 @@ const SetView = ({ toggleBackDropper }: SetViewProps) => {
           <FloppyIcon width={40} height={40} />
           <span>Saved as View</span>
         </div>
-        <span onClick={toggleBackDropper}>X</span>
+        <span onClick={toggleBackDropper}><XMarkCIcon width={24} height={24} /></span>
       </div>
       <div className={styles.separator}></div>
       <div className={styles.viewContent}>

@@ -1,4 +1,4 @@
-import { SortIcon } from '@/components/icons/icons';
+import { SortIcon, XMarkCIcon } from '@/components/icons/icons';
 import styles from './sort.module.css'
 type SortProp = {
     onClick: any;
@@ -14,7 +14,7 @@ const Sort = ({onClick, top, left, right} : SortProp) => {
                       <SortIcon width={20} height={20} />
                       <span>Sort By</span>
                     </div>
-                    <span onClick={onClick}>X</span>
+                    <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
                   </div>
                   <div className={styles.separator}></div>
                   <div className={styles.sortList}>
