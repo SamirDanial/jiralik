@@ -31,7 +31,7 @@ import user from "../../assets/iconsImg/user.png";
 import paidbill from "../../assets/iconsImg/paidbill.png";
 import checklist from "../../assets/iconsImg/checklist.png";
 import bulletlist from "../../assets/iconsImg/bulletlist.png";
-import { TrashIcon } from "@heroicons/react/24/outline";
+import { TrashIcon, ArchiveBoxIcon, ClockIcon } from "@heroicons/react/24/outline";
 
 type IconType = {
   width: number;
@@ -336,7 +336,7 @@ export const PinIcon = ({ width, height, onClick }: IconType) => {
   );
 };
 
-export const FolderIcon = ({ width, height }: IconType) => {
+export const FolderIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -345,6 +345,7 @@ export const FolderIcon = ({ width, height }: IconType) => {
         alt="folder icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );
@@ -482,4 +483,12 @@ export const BulletListIcon = ({ width, height }: IconType) => {
 
 export const TrashBinIcon = ({ width, height, onClick }: IconType) => {
   return <TrashIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const ArchiveIcon = ({ width, height, onClick }: IconType) => {
+  return <ArchiveBoxIcon onClick={onClick} width={width} height={height} />;
+};
+
+export const SnoozeIcon = ({ width, height, onClick }: IconType) => {
+  return <ClockIcon onClick={onClick} width={width} height={height} />;
 };
