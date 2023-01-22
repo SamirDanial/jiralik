@@ -18,6 +18,7 @@ import Sort from "../actions/sortComponent/sort";
 import MoreOption from "../actions/moreOptionComponent/more";
 import ProjectNames from "../actions/projectNamesComponent/projectNames";
 import Filter from "../actions/filterComponent/filter";
+import Card from "../actions/cardComponent/card";
 
 type MainContentProps = {
   toggleBackDropper?: any
@@ -114,26 +115,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           </div>
         </div>
         <div className={styles.listSeparator}></div>
-        <div className={styles.card}>
-          <div className={styles.cardTitle}>
-            <span>Card Title</span>
-            <span><XMarkCIcon width={24} height={24} /></span>
-          </div>
-          <div className={styles.inputContainer}>
-            <textarea
-              onFocus={() => setShowTitles(true)}
-              onBlur={() => setShowTitles(false)}
-              placeholder="Enter card name"
-            />
-            {showTitles && <ProjectNames />}
-          </div>
-          <div className={styles.projectAndAction}>
-            <select>
-              <option value="0">Select Project</option>
-            </select>
-            <button>Add</button>
-          </div>
-        </div>
+        <Card />
       </div>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
@@ -331,12 +313,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
           </div>
         </div>
-        <div className={styles.addNewItemContainer}>
-          <div className={styles.addNewItem}>
-            <span>+</span>
-            <span>Add Card</span>
-          </div>
-        </div>
+        <Card />
       </div>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
@@ -597,12 +574,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
           </div>
         </div>
-        <div className={styles.addNewItemContainer}>
-          <div className={styles.addNewItem}>
-            <span>+</span>
-            <span>Add Card</span>
-          </div>
-        </div>
+        <Card />
       </div>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
@@ -790,12 +762,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
           </div>
         </div>
-        <div className={styles.addNewItemContainer}>
-          <div className={styles.addNewItem}>
-            <span>+</span>
-            <span>Add Card</span>
-          </div>
-        </div>
+        <Card />
       </div>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
