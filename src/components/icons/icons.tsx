@@ -328,9 +328,9 @@ export const LoudSpeaker2Icon = ({ width, height }: IconType) => {
   );
 };
 
-export const PinIcon = ({ width, height }: IconType) => {
+export const PinIcon = ({ width, height, onClick }: IconType) => {
   return (
-    <div>
+    <div onClick={onClick}>
       <Image priority src={pin} alt="pin icon" width={width} height={height} />
     </div>
   );

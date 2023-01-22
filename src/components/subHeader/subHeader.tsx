@@ -15,6 +15,7 @@ import {
 import Sort from '../actions/sortComponent/sort';
 import Filter from '../actions/filterComponent/filter';
 import View from '../actions/viewComponent/view';
+import Pin from '../actions/pinComponent/pin';
 
 type SubMenuType = {
   toggleBackDropper: any;
@@ -24,6 +25,7 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
   const [showSortBy, setShowSortBy] = useState<boolean>(false)
   const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
   const [showViews, setShowViews] = useState<boolean>(false);
+  const [showPin, setShowPin] = useState<boolean>(false);
   return (
     <div className={styles.subHeaderContainer}>
       <div className={styles.subHeader}>
@@ -113,7 +115,10 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
         </div>
         <div className={styles.filters}>
           <div className={styles.filterItem}>
-            <PinIcon width={20} height={20} />
+            <PinIcon onClick={() => setShowPin(pre => !pre)} width={20} height={20} />
+            {
+              showPin && <Pin onClick={() => setShowPin(false)} />
+            }
           </div>
           <div className={styles.filterItem}>
             <FolderIcon width={20} height={20} />
