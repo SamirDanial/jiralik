@@ -24,13 +24,14 @@ import pin from "../../assets/iconsImg/pin.png";
 import folder from "../../assets/iconsImg/folder.png";
 import floppy from "../../assets/iconsImg/floppy.png";
 import filter from "../../assets/iconsImg/filter.png";
-import sortby from '../../assets/iconsImg/sortby.png';
-import more from '../../assets/iconsImg/more.png';
-import leftalignment from '../../assets/iconsImg/leftalignment.png';
-import user from '../../assets/iconsImg/user.png';
-import paidbill from '../../assets/iconsImg/paidbill.png';
-import checklist from '../../assets/iconsImg/checklist.png';
-import bulletlist from '../../assets/iconsImg/bulletlist.png';
+import sortby from "../../assets/iconsImg/sortby.png";
+import more from "../../assets/iconsImg/more.png";
+import leftalignment from "../../assets/iconsImg/leftalignment.png";
+import user from "../../assets/iconsImg/user.png";
+import paidbill from "../../assets/iconsImg/paidbill.png";
+import checklist from "../../assets/iconsImg/checklist.png";
+import bulletlist from "../../assets/iconsImg/bulletlist.png";
+import { TrashIcon } from "@heroicons/react/24/outline";
 
 type IconType = {
   width: number;
@@ -293,13 +294,7 @@ export const Workflow2Icon = ({ width, height }: IconType) => {
 export const PenIcon = ({ width, height }: IconType) => {
   return (
     <div>
-      <Image
-        priority
-        src={pen}
-        alt="pen icon"
-        width={width}
-        height={height}
-      />
+      <Image priority src={pen} alt="pen icon" width={width} height={height} />
     </div>
   );
 };
@@ -336,13 +331,7 @@ export const LoudSpeaker2Icon = ({ width, height }: IconType) => {
 export const PinIcon = ({ width, height }: IconType) => {
   return (
     <div>
-      <Image
-        priority
-        src={pin}
-        alt="pin icon"
-        width={width}
-        height={height}
-      />
+      <Image priority src={pin} alt="pin icon" width={width} height={height} />
     </div>
   );
 };
@@ -361,7 +350,7 @@ export const FolderIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const FloppyIcon = ({ width, height }: IconType) => {
+export const FloppyIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
@@ -370,6 +359,7 @@ export const FloppyIcon = ({ width, height }: IconType) => {
         alt="floppy icon"
         width={width}
         height={height}
+        onClick={onClick}
       />
     </div>
   );
@@ -488,4 +478,8 @@ export const BulletListIcon = ({ width, height }: IconType) => {
       />
     </div>
   );
+};
+
+export const TrashBinIcon = ({ width, height, onClick }: IconType) => {
+  return <TrashIcon onClick={onClick} width={width} height={height} />;
 };

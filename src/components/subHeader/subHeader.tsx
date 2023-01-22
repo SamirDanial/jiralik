@@ -14,6 +14,7 @@ import {
 } from "../icons/icons";
 import Sort from '../actions/sortComponent/sort';
 import Filter from '../actions/filterComponent/filter';
+import View from '../actions/viewComponent/view';
 
 type SubMenuType = {
   toggleBackDropper: any;
@@ -22,6 +23,7 @@ type SubMenuType = {
 const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
   const [showSortBy, setShowSortBy] = useState<boolean>(false)
   const [showFilterBy, setShowFilterBy] = useState<boolean>(false);
+  const [showViews, setShowViews] = useState<boolean>(false);
   return (
     <div className={styles.subHeaderContainer}>
       <div className={styles.subHeader}>
@@ -38,7 +40,7 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
                 <PenIcon width={40} height={40} />
               </div>
               <div className={styles.actionContainer}>
-                <CloseTagIcon onClick={toggleBackDropper} width={40} height={40} />
+                <CloseTagIcon width={40} height={40} />
               </div>
               <div className={styles.actionContainer}>
                 <LoudSpeaker2Icon width={40} height={40} />
@@ -117,8 +119,11 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
             <FolderIcon width={20} height={20} />
           </div>
           <div className={styles.filterItem}>
-            <FloppyIcon width={30} height={30} />
-            <span>Views</span>
+            <FloppyIcon width={30} height={30} onClick={() => setShowViews(pre => !pre)} />
+            <span onClick={() => setShowViews(pre => !pre)}>Views</span>
+            {
+              showViews && <View toggleBackDropper={toggleBackDropper} onClick={() => setShowViews(false)} />
+            }
           </div>
           <div className={styles.filterItem} style={{position: 'relative'}}>
             <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={15} height={15} />
