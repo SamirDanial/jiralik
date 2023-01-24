@@ -204,3 +204,26 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+@media screen and (width < 625px) {
+  .mainView {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border: 1px solid #e6e7e9;
+    z-index: 15;
+  }
+
+  .mainView .viewContent .stageMembersContainer {
+    cursor: pointer;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: #eff2f5;
+  }
+}
