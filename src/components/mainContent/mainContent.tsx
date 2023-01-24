@@ -765,10 +765,10 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>Completed</span>
           <span className={styles.stageItemNumber}>(1)</span>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon width={13} height={13} />
+            <Filter2Icon width={28} height={28} />
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon width={15} height={15} />
+            <Sort2Icon width={28} height={28} />
           </div>
           <div className={styles.moreIconContainer}>
             <MoreIcon width={28} height={28} />
