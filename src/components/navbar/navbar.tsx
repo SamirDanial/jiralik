@@ -37,49 +37,49 @@ const Navbar = () => {
       </div>
       <div className={styles.items}>
         <div className={styles.item}>
-          <DashboardIcon width={20} height={20} />
+          <DashboardIcon width={24} height={24} />
           <p>Dashboard</p>
         </div>
         <div className={styles.item}>
-          <WorkflowIcon width={20} height={20} />
+          <WorkflowIcon width={24} height={24} />
           <p>Workflow</p>
         </div>
         <div className={styles.item}>
-          <CalendarIcon width={20} height={20} />
+          <CalendarIcon width={24} height={24} />
           <p>Calendar</p>
         </div>
         <div className={styles.item}>
-          <SocialRMIcon width={20} height={20} />
+          <SocialRMIcon width={24} height={24} />
           <p>SocialRM</p>
         </div>
         <div className={styles.item}>
-          <MetricsIcon width={20} height={20} />
+          <MetricsIcon width={24} height={24} />
           <p>Metrics</p>
         </div>
         <div className={styles.item}>
-          <LeadsIcon width={20} height={20} />
+          <LeadsIcon width={24} height={24} />
           <p>Leads</p>
         </div>
         <div className={styles.item}>
-          <UsersIcon width={20} height={20} />
+          <UsersIcon width={24} height={24} />
           <p>Users</p>
         </div>
         <div className={styles.item}>
-          <NotificationIcon width={20} height={20} />
+          <NotificationIcon width={24} height={24} />
           <p>Notifications</p>
         </div>
         <div className={styles.item}>
-          <DocumentIcon width={20} height={20} />
+          <DocumentIcon width={24} height={24} />
           <p>Documents</p>
         </div>
         <div className={styles.item}>
-          <SegmentIcon width={20} height={20} />
+          <SegmentIcon width={24} height={24} />
           <p>Segments</p>
         </div>
       </div>
       <div className={styles.navbarFooter}>
         <div className={styles.navbarFooterItem}>
-          <CompanyIcon width={20} height={20} />
+          <CompanyIcon width={24} height={24} />
           <p>Company</p>
         </div>
       </div>

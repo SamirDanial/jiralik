@@ -12,20 +12,22 @@ import segment from "../../assets/iconsImg/icons/segments.png";
 import company from "../../assets/iconsImg/icons/company.png";
 import downarrow from "../../assets/iconsImg/downarrow2.png";
 import doubleleftarrow from "../../assets/iconsImg/doubleleftarrow2.png";
-import question from "../../assets/iconsImg/question.png";
+import question from "../../assets/iconsImg/icons/question.png";
 import search from "../../assets/iconsImg/search.png";
-import loudspeaker from "../../assets/iconsImg/loudspeaker.png";
-import message from "../../assets/iconsImg/message.png";
+import loudspeaker from "../../assets/iconsImg//icons/loudspeaker.png";
+import message from "../../assets/iconsImg/icons/message.png";
 import workflow2 from "../../assets/iconsImg/workflow3.png";
 import pen from "../../assets/iconsImg/pen2.png";
 import closetag from "../../assets/iconsImg/closetag.png";
 import loudspeaker2 from "../../assets/iconsImg/loudspeaker2.png";
-import pin from "../../assets/iconsImg/pin.png";
-import folder from "../../assets/iconsImg/folder.png";
-import floppy from "../../assets/iconsImg/floppy.png";
-import filter from "../../assets/iconsImg/filter.png";
-import sortby from "../../assets/iconsImg/sortby.png";
-import more from "../../assets/iconsImg/more.png";
+import pin from "../../assets/iconsImg/icons/pin.png";
+import folder from "../../assets/iconsImg/icons/archive.png";
+import floppy from "../../assets/iconsImg/icons/floppy.png";
+import filter from "../../assets/iconsImg/icons/filter.png";
+import filter2 from "../../assets/iconsImg/icons/filter2.png";
+import sortby from "../../assets/iconsImg/icons/sort.png";
+import sortby2 from "../../assets/iconsImg/icons/sort2.png";
+import more from "../../assets/iconsImg/icons/more.png";
 import leftalignment from "../../assets/iconsImg/leftalignment.png";
 import user from "../../assets/iconsImg/user.png";
 import paidbill from "../../assets/iconsImg/paidbill.png";
@@ -381,12 +383,42 @@ export const FilterIcon = ({ width, height, onClick }: IconType) => {
   );
 };
 
+export const Filter2Icon = ({ width, height, onClick }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={filter2}
+        alt="filter icon"
+        width={width}
+        height={height}
+        onClick={onClick}
+      />
+    </div>
+  );
+};
+
 export const SortIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
         priority
         src={sortby}
+        alt="sort icon"
+        width={width}
+        height={height}
+        onClick={onClick}
+      />
+    </div>
+  );
+};
+
+export const Sort2Icon = ({ width, height, onClick }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={sortby2}
         alt="sort icon"
         width={width}
         height={height}

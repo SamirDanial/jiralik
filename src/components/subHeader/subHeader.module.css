@@ -1,5 +1,5 @@
 .subHeaderContainer {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #EBECED;
     background-color: #ffffff;
     z-index: 10;
     position: sticky;
@@ -48,7 +48,7 @@
     margin-top: 4px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #CDCFD3;
   }
   
   .subHeaderContainer .subHeader .actionAndHuman .actions .humansContainer {
@@ -95,7 +95,7 @@
   .subHeaderContainer .filters .filterItem {
     cursor: pointer;
     padding: 5px 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #E6E7E9;
     border-radius: 5px;
     display: flex;
     gap:10;

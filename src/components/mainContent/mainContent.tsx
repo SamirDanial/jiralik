@@ -1,22 +1,19 @@
 import { useState } from "react";
 import {
-  BulletListIcon,
   CheckListIcon,
-  FilterIcon,
+  Filter2Icon,
   LeftAlignmentIcon,
   ListIcon,
   MoreIcon,
   PaidBillIcon,
   QueueIcon,
-  SortIcon,
+  Sort2Icon,
   UserIcon,
-  XMarkCIcon,
 } from "../icons/icons";
 import styles from "./mainContent.module.css";
 import Image from "next/image";
 import Sort from "../actions/sortComponent/sort";
 import MoreOption from "../actions/moreOptionComponent/more";
-import ProjectNames from "../actions/projectNamesComponent/projectNames";
 import Filter from "../actions/filterComponent/filter";
 import Card from "../actions/cardComponent/card";
 
@@ -34,16 +31,16 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
     <div className={styles.mainContent}>
       <div className={styles.stage}>
         <div className={styles.stageHeader}>
-          <span className={styles.stageName}>Backlog</span>
-          <span className={styles.stageItemNumber}>(2)</span>
+          <p className={styles.stageName}>Backlog</p>
+          <p className={styles.stageItemNumber}>(2)</p>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={13} height={13} />
+            <Filter2Icon width={28} height={28} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={15} height={15} />
+            <Sort2Icon width={28} height={28} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={15} height={15} />
+            <MoreIcon width={28} height={28} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -121,23 +118,23 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>To Do</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={13} height={13} />
+            <Filter2Icon onClick={() => setShowFilterBy(pre => !pre)} width={28} height={28} />
             {
               showFilterBy && <Filter onClick={() => setShowFilterBy(false)} />
             }
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon
+            <Sort2Icon
               onClick={() => setShowSortBy((pre) => !pre)}
-              width={15}
-              height={15}
+              width={28}
+              height={28}
             />
             <div className={styles.sortBy}>
               {showSortBy && <Sort onClick={() => setShowSortBy(false)} />}
             </div>
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={15} height={15} />
+            <MoreIcon width={28} height={28} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -319,16 +316,16 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Progress</span>
           <span className={styles.stageItemNumber}>(35)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={13} height={13} />
+            <Filter2Icon width={28} height={28} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={15} height={15} />
+            <Sort2Icon width={28} height={28} />
           </div>
           <div className={styles.moreIconContainer}>
             <MoreIcon
               onClick={() => setShowActions((pre) => !pre)}
-              width={15}
-              height={15}
+              width={28}
+              height={28}
             />
           </div>
           {showActions && <MoreOption onClick={() => setShowActions(false)} />}
@@ -580,13 +577,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Review</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={13} height={13} />
+            <Filter2Icon width={28} height={28} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={15} height={15} />
+            <Sort2Icon width={28} height={28} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={15} height={15} />
+            <MoreIcon width={28} height={28} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -768,13 +765,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>Completed</span>
           <span className={styles.stageItemNumber}>(1)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={13} height={13} />
+            <Filter2Icon width={13} height={13} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={15} height={15} />
+            <Sort2Icon width={15} height={15} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={15} height={15} />
+            <MoreIcon width={28} height={28} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>

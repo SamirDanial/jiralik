@@ -117,33 +117,33 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
         </div>
         <div className={styles.filters}>
           <div className={styles.filterItem}>
-            <PinIcon onClick={() => setShowPin(pre => !pre)} width={20} height={20} />
+            <PinIcon onClick={() => setShowPin(pre => !pre)} width={28} height={28} />
             {
               showPin && <Pin onClick={() => setShowPin(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <FolderIcon width={20} height={20} onClick={() => setShowArchive(pre => !pre)} />
+            <FolderIcon width={28} height={28} onClick={() => setShowArchive(pre => !pre)} />
             {
               showArchive && <Archive onClick={() => setShowArchive(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <FloppyIcon width={30} height={30} onClick={() => setShowViews(pre => !pre)} />
+            <FloppyIcon width={28} height={28} onClick={() => setShowViews(pre => !pre)} />
             <span onClick={() => setShowViews(pre => !pre)}>Views</span>
             {
               showViews && <View toggleBackDropper={toggleBackDropper} onClick={() => setShowViews(false)} />
             }
           </div>
           <div className={styles.filterItem} style={{position: 'relative'}}>
-            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={15} height={15} />
+            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={28} height={28} />
             <span onClick={() => setShowFilterBy(pre => !pre)}>Filter</span>
             {
               showFilterBy && <Filter top={50} left={-225} onClick={() => setShowFilterBy(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={20} height={20} />
+            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={28} height={28} />
             <span onClick={() => setShowSortBy(pre => !pre)} >Sort by</span>
             <div className={styles.sortBy}>
               {showSortBy && (

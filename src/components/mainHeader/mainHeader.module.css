@@ -1,9 +1,9 @@
 .mainHeaderContainer {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #EBECED;
 }
 
 .mainHeaderContainer .mainHeader {
-  margin: 14.5px 20px;
+  padding: 15px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,8 +83,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0px 15px;
+  border: 1px solid #E6E7E9;
+  padding: 0px 10px;
   border-radius: 5px;
 }
 
@@ -95,8 +95,8 @@
   align-items: center;
   background-color: #0E8CFF;
   color: white;
-  padding: 0px 20px;
-  border-radius: 5px;
+  padding: 0px 12px;
+  border-radius: 10px;
   font-size: 35px;
 }
 
@@ -115,7 +115,7 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #E6E7E9;
   font-size: 15px;
   padding-left: 30px;
 }
@@ -131,7 +131,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #E6E7E9;
   padding: 0px 15px;
   border-radius: 5px;
 }

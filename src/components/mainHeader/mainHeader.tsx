@@ -46,7 +46,7 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
               </div>
               <div className={styles.search}>
                 <div className={styles.questionIconContainer}>
-                  <QuestionIcon width={20} height={20} />
+                  <QuestionIcon width={28} height={28} />
                 </div>
                 <div className={styles.plusContainer} onClick={toggleBackDropper}>
                   <span><PlusCIcon width={24} height={24} /></span>
@@ -60,13 +60,13 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
               </div>
               <div className={styles.profile}>
                 <div className={styles.loudspeakerContainer}>
-                  <LoudSpeakerIcon width={20} height={20} />
+                  <LoudSpeakerIcon width={28} height={28} />
                 </div>
                 <div className={styles.loudspeakerContainer}>
-                  <CalendarIcon width={20} height={20} />
+                  <CalendarIcon width={28} height={28} />
                 </div>
                 <div className={styles.loudspeakerContainer}>
-                  <MessageIcon width={20} height={20} />
+                  <MessageIcon width={28} height={28} />
                 </div>
                 <div className={styles.imageContainer}>
                   <Image
