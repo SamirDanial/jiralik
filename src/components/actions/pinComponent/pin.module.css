@@ -205,7 +205,7 @@
   overflow: hidden;
 }
 
-@media screen and (width < 625px) {
+@media screen and (width < 770px) {
   .mainView {
     width: 100%;
     top: 0;
