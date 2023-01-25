@@ -117,18 +117,18 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
-    margin-left: 30px;
-    margin-bottom: 32px;
+    margin-left: 28px;
+    margin-bottom: 33px;
     padding-top: 4px;
     width: 100%;
   }
   
   .navbar2 .header .content .status {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #27E1BF;
-    margin-top: 33px;
+    margin-top: 31px;
   }
   
   .navbar2 .header .content .companyName {
