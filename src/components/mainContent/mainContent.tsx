@@ -52,7 +52,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <UserIcon width={24} height={24} />
+              <UserIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -348,6 +348,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
+              <PaidBillIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -545,7 +546,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <UserSearchIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -627,7 +628,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContactRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <UserSearchIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -659,7 +660,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <UserIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -691,7 +692,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -773,6 +774,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
+              <PaidBillIcon width={20} height={20} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
