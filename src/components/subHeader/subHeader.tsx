@@ -6,11 +6,11 @@ import {
   FilterIcon,
   FloppyIcon,
   FolderIcon,
-  LoudSpeaker2Icon,
+  LoudSpeakerIcon,
   PenIcon,
   PinIcon,
   SortIcon,
-  Workflow2Icon,
+  WorkflowIcon,
 } from "../icons/icons";
 import Sort from '../actions/sortComponent/sort';
 import Filter from '../actions/filterComponent/filter';
@@ -38,16 +38,16 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
           <div className={styles.actions}>
             <div className={styles.actionsContainer}>
               <div className={styles.actionContainer}>
-                <Workflow2Icon width={40} height={40} />
+                <WorkflowIcon width={20} height={20} />
               </div>
               <div className={styles.actionContainer}>
-                <PenIcon width={40} height={40} />
+                <PenIcon width={20} height={20} />
               </div>
               <div className={styles.actionContainer}>
-                <CloseTagIcon width={40} height={40} />
+                <CloseTagIcon width={20} height={20} />
               </div>
               <div className={styles.actionContainer}>
-                <LoudSpeaker2Icon width={40} height={40} />
+                <LoudSpeakerIcon width={20} height={20} />
               </div>
             </div>
             <div className={styles.separator}></div>
@@ -59,8 +59,8 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
                     priority
                     unoptimized
                     src="https://t4.ftcdn.net/jpg/02/36/98/33/360_F_236983312_4AhvzYIX63BowwYj7ZW2NiCQsszylFcg.jpg"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <div className={styles.batchNumber}>
@@ -74,8 +74,8 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
                     priority
                     unoptimized
                     src="https://thumbs.dreamstime.com/b/portrait-man-hoodie-sweater-color-background-space-design-portrait-man-hoodie-sweater-color-background-space-127822235.jpg"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <div className={styles.batchNumber}>
@@ -89,8 +89,8 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
                     priority
                     unoptimized
                     src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <div className={styles.batchNumber}>
@@ -104,8 +104,8 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
                     priority
                     unoptimized
                     src="https://thumbs.dreamstime.com/b/fashion-portrait-black-man-yellow-clothes-color-background-african-american-male-model-stylish-hoodie-sweatshirt-showing-157508002.jpg"
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                   />
                 </div>
                 <div className={styles.batchNumber}>
@@ -117,33 +117,33 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
         </div>
         <div className={styles.filters}>
           <div className={styles.filterItem}>
-            <PinIcon onClick={() => setShowPin(pre => !pre)} width={28} height={28} />
+            <PinIcon onClick={() => setShowPin(pre => !pre)} width={24} height={24} />
             {
               showPin && <Pin onClick={() => setShowPin(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <FolderIcon width={28} height={28} onClick={() => setShowArchive(pre => !pre)} />
+            <FolderIcon width={24} height={24} onClick={() => setShowArchive(pre => !pre)} />
             {
               showArchive && <Archive onClick={() => setShowArchive(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <FloppyIcon width={28} height={28} onClick={() => setShowViews(pre => !pre)} />
+            <FloppyIcon width={20} height={20} onClick={() => setShowViews(pre => !pre)} />
             <span onClick={() => setShowViews(pre => !pre)}>Views</span>
             {
               showViews && <View toggleBackDropper={toggleBackDropper} onClick={() => setShowViews(false)} />
             }
           </div>
           <div className={styles.filterItem} style={{position: 'relative'}}>
-            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={28} height={28} />
+            <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={20} height={20} />
             <span onClick={() => setShowFilterBy(pre => !pre)}>Filter</span>
             {
               showFilterBy && <Filter top={50} left={-225} onClick={() => setShowFilterBy(false)} />
             }
           </div>
           <div className={styles.filterItem}>
-            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={28} height={28} />
+            <SortIcon onClick={() => setShowSortBy(pre => !pre)} width={20} height={20} />
             <span onClick={() => setShowSortBy(pre => !pre)} >Sort by</span>
             <div className={styles.sortBy}>
               {showSortBy && (

@@ -1,40 +1,36 @@
 import Image from "next/image";
-import dashboard from "../../assets/iconsImg/icons/dashboard.png";
-import workFlow from "../../assets/iconsImg/icons/workflow.png";
-import calendar from "../../assets/iconsImg/icons/calendar.png";
-import socialrm from "../../assets/iconsImg/icons/socialRM.png";
-import metrics from "../../assets/iconsImg/icons/metrics.png";
-import leads from "../../assets/iconsImg/icons/leads.png";
-import users from "../../assets/iconsImg/icons/users.png";
-import notification from "../../assets/iconsImg/icons/notifications.png";
-import document from "../../assets/iconsImg/icons/documents.png";
-import segment from "../../assets/iconsImg/icons/segments.png";
-import company from "../../assets/iconsImg/icons/company.png";
-import downarrow from "../../assets/iconsImg/downarrow2.png";
-import doubleleftarrow from "../../assets/iconsImg/doubleleftarrow2.png";
-import question from "../../assets/iconsImg/icons/question.png";
-import search from "../../assets/iconsImg/search.png";
-import loudspeaker from "../../assets/iconsImg//icons/loudspeaker.png";
-import message from "../../assets/iconsImg/icons/message.png";
-import workflow2 from "../../assets/iconsImg/workflow3.png";
-import pen from "../../assets/iconsImg/pen2.png";
-import closetag from "../../assets/iconsImg/closetag.png";
-import loudspeaker2 from "../../assets/iconsImg/loudspeaker2.png";
-import pin from "../../assets/iconsImg/icons/pin.png";
-import folder from "../../assets/iconsImg/icons/archive.png";
-import floppy from "../../assets/iconsImg/icons/floppy.png";
-import filter from "../../assets/iconsImg/icons/filter.png";
-import filter2 from "../../assets/iconsImg/icons/filter2.png";
-import sortby from "../../assets/iconsImg/icons/sort.png";
-import sortby2 from "../../assets/iconsImg/icons/sort2.png";
-import more from "../../assets/iconsImg/icons/more.png";
-import leftalignment from "../../assets/iconsImg/icons/leftalign.png";
-import user from "../../assets/iconsImg/icons/user.png";
-import searchuser from "../../assets/iconsImg/icons/searchUser.png";
-import paidbill from "../../assets/iconsImg/icons/donelist.png";
-import checklist from "../../assets/iconsImg/icons/todo.png";
-import sms12 from "../../assets/iconsImg/icons/sms12.png";
-import chain2 from "../../assets/iconsImg/icons/chain2.png";
+import dashboard from "../../assets/svgIcon/dashboard.svg";
+import workflow from "../../assets/svgIcon/workflow.svg";
+import calendar from "../../assets/svgIcon/calendar.svg";
+import socialrm from "../../assets/svgIcon/socialrm.svg";
+import metrics from "../../assets/svgIcon/metrics.svg";
+import leads from "../../assets/svgIcon/leads.svg";
+import users from "../../assets/svgIcon/users.svg";
+import notification from "../../assets/svgIcon/notifications.svg";
+import document from "../../assets/svgIcon/documents.svg";
+import segment from "../../assets/svgIcon/segments.svg";
+import company from "../../assets/svgIcon/company.svg";
+import downarrow from "../../assets/svgIcon/downarrow.svg";
+import doubleleftarrow from "../../assets/svgIcon/doubleleftarrow.svg";
+import question from "../../assets/svgIcon/question.svg";
+import search from "../../assets/svgIcon/search.svg";
+import loudspeaker from "../../assets/svgIcon/annoucement.svg";
+import message from "../../assets/svgIcon/message.svg";
+import pen from "../../assets/svgIcon/design.svg";
+import closetag from "../../assets/svgIcon/code.svg";
+import pin from "../../assets/svgIcon/pinned.svg";
+import folder from "../../assets/svgIcon/folder.svg";
+import floppy from "../../assets/svgIcon/save.svg";
+import filter from "../../assets/svgIcon/filter.svg";
+import sortby from "../../assets/svgIcon/sort.svg";
+import more from "../../assets/svgIcon/more.svg";
+import leftalignment from "../../assets/svgIcon/leftalignment.svg";
+import user from "../../assets/svgIcon/users.svg";
+import searchuser from "../../assets/svgIcon/searchuser.svg";
+import paidbill from "../../assets/svgIcon/billdone.svg";
+import checklist from "../../assets/svgIcon/todo.svg";
+import sms from "../../assets/svgIcon/sms.svg";
+import chain from "../../assets/svgIcon/chain.svg";
 import bulletlist from "../../assets/iconsImg/bulletlist.png";
 import { TrashIcon, ArchiveBoxIcon, ClockIcon, ListBulletIcon, QueueListIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -63,7 +59,7 @@ export const WorkflowIcon = ({ width, height }: IconType) => {
     <div>
       <Image
         priority
-        src={workFlow}
+        src={workflow}
         alt="workFlow icon"
         width={width}
         height={height}
@@ -282,20 +278,6 @@ export const MessageIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const Workflow2Icon = ({ width, height }: IconType) => {
-  return (
-    <div>
-      <Image
-        priority
-        src={workflow2}
-        alt="work flow2 icon"
-        width={width}
-        height={height}
-      />
-    </div>
-  );
-};
-
 export const PenIcon = ({ width, height }: IconType) => {
   return (
     <div>
@@ -314,20 +296,6 @@ export const CloseTagIcon = ({ width, height, onClick }: IconType) => {
         width={width}
         height={height}
         onClick={onClick}
-      />
-    </div>
-  );
-};
-
-export const LoudSpeaker2Icon = ({ width, height }: IconType) => {
-  return (
-    <div>
-      <Image
-        priority
-        src={loudspeaker2}
-        alt="loud speaker2 icon"
-        width={width}
-        height={height}
       />
     </div>
   );
@@ -386,42 +354,12 @@ export const FilterIcon = ({ width, height, onClick }: IconType) => {
   );
 };
 
-export const Filter2Icon = ({ width, height, onClick }: IconType) => {
-  return (
-    <div>
-      <Image
-        priority
-        src={filter2}
-        alt="filter icon"
-        width={width}
-        height={height}
-        onClick={onClick}
-      />
-    </div>
-  );
-};
-
 export const SortIcon = ({ width, height, onClick }: IconType) => {
   return (
     <div>
       <Image
         priority
         src={sortby}
-        alt="sort icon"
-        width={width}
-        height={height}
-        onClick={onClick}
-      />
-    </div>
-  );
-};
-
-export const Sort2Icon = ({ width, height, onClick }: IconType) => {
-  return (
-    <div>
-      <Image
-        priority
-        src={sortby2}
         alt="sort icon"
         width={width}
         height={height}
@@ -516,13 +454,13 @@ export const CheckListIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const Sms12Icon = ({ width, height }: IconType) => {
+export const SmsIcon = ({ width, height }: IconType) => {
   return (
     <div>
       <Image
         priority
-        src={sms12}
-        alt="SMS 12 icon"
+        src={sms}
+        alt="SMS icon"
         width={width}
         height={height}
       />
@@ -530,13 +468,13 @@ export const Sms12Icon = ({ width, height }: IconType) => {
   );
 };
 
-export const Chain2Icon = ({ width, height }: IconType) => {
+export const ChainIcon = ({ width, height }: IconType) => {
   return (
     <div>
       <Image
         priority
-        src={chain2}
-        alt="chain 2 icon"
+        src={chain}
+        alt="chain icon"
         width={width}
         height={height}
       />

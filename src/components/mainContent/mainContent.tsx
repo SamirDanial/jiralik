@@ -1,15 +1,15 @@
 import { useState } from "react";
 import {
-  Chain2Icon,
+  ChainIcon,
   CheckListIcon,
-  Filter2Icon,
+  FilterIcon,
   LeftAlignmentIcon,
   ListIcon,
   MoreIcon,
   PaidBillIcon,
   QueueIcon,
-  Sms12Icon,
-  Sort2Icon,
+  SmsIcon,
+  SortIcon,
   UserIcon,
   UserSearchIcon,
 } from "../icons/icons";
@@ -36,13 +36,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <p className={styles.stageName}>Backlog</p>
           <p className={styles.stageItemNumber}>(2)</p>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon width={28} height={28} />
+            <FilterIcon width={20} height={20} />
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon width={28} height={28} />
+            <SortIcon width={20} height={20} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={28} height={28} />
+            <MoreIcon width={20} height={20} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -120,25 +120,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>To Do</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon
+            <FilterIcon
               onClick={() => setShowFilterBy((pre) => !pre)}
-              width={28}
-              height={28}
+              width={20}
+              height={20}
             />
             {showFilterBy && <Filter onClick={() => setShowFilterBy(false)} />}
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon
+            <SortIcon
               onClick={() => setShowSortBy((pre) => !pre)}
-              width={28}
-              height={28}
+              width={20}
+              height={20}
             />
             <div className={styles.sortBy}>
               {showSortBy && <Sort onClick={() => setShowSortBy(false)} />}
             </div>
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={28} height={28} />
+            <MoreIcon width={20} height={20} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -159,10 +159,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -194,10 +196,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -229,10 +233,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -265,10 +271,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -300,10 +308,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             </div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -327,16 +337,16 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Progress</span>
           <span className={styles.stageItemNumber}>(35)</span>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon width={28} height={28} />
+            <FilterIcon width={20} height={20} />
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon width={28} height={28} />
+            <SortIcon width={20} height={20} />
           </div>
           <div className={styles.moreIconContainer}>
             <MoreIcon
               onClick={() => setShowActions((pre) => !pre)}
-              width={28}
-              height={28}
+              width={20}
+              height={20}
             />
           </div>
           {showActions && <MoreOption onClick={() => setShowActions(false)} />}
@@ -356,10 +366,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -389,10 +401,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -422,10 +436,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -455,10 +471,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -488,10 +506,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -521,10 +541,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -554,10 +576,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
               <LeftAlignmentIcon width={20} height={20} />
-              <Sms12Icon width={40} height={18} />
+              <SmsIcon width={40} height={18} />
+              <span>12</span>
               <CheckListIcon width={20} height={20} />
               <span>8/9</span>
-              <Chain2Icon width={40} height={20} />
+              <ChainIcon width={20} height={20} />
+              <span>2</span>
             </div>
             <div className={styles.stageFooter}>
               <span>Created 3 days ago</span>
@@ -581,13 +605,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Review</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon width={28} height={28} />
+            <FilterIcon width={20} height={20} />
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon width={28} height={28} />
+            <SortIcon width={20} height={20} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={28} height={28} />
+            <MoreIcon width={20} height={20} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -758,13 +782,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>Completed</span>
           <span className={styles.stageItemNumber}>(1)</span>
           <div className={styles.filterIconContainer}>
-            <Filter2Icon width={28} height={28} />
+            <FilterIcon width={20} height={20} />
           </div>
           <div className={styles.sortIconContainer}>
-            <Sort2Icon width={28} height={28} />
+            <SortIcon width={20} height={20} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={28} height={28} />
+            <MoreIcon width={20} height={20} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
