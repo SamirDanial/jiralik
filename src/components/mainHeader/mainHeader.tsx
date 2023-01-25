@@ -17,8 +17,8 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
                     unoptimized
                     priority
                     alt="spider man"
-                    width={40}
-                    height={40}
+                    width={35}
+                    height={35}
                   />
                 </div>
                 <div className={styles.batchContainer}>
@@ -40,13 +40,13 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
                 </div>
                 <div className={styles.downArrowButton}>
                   <div>
-                    <SingleDownArrowIcon width={20} height={20} />
+                    <SingleDownArrowIcon width={15} height={15} />
                   </div>
                 </div>
               </div>
               <div className={styles.search}>
                 <div className={styles.questionIconContainer}>
-                  <QuestionIcon width={28} height={28} />
+                  <QuestionIcon width={24} height={24} />
                 </div>
                 <div className={styles.plusContainer} onClick={toggleBackDropper}>
                   <span><PlusCIcon width={24} height={24} /></span>
@@ -60,13 +60,13 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
               </div>
               <div className={styles.profile}>
                 <div className={styles.loudspeakerContainer}>
-                  <LoudSpeakerIcon width={28} height={28} />
+                  <LoudSpeakerIcon width={24} height={24} />
                 </div>
                 <div className={styles.loudspeakerContainer}>
-                  <CalendarIcon width={28} height={28} />
+                  <CalendarIcon width={24} height={24} />
                 </div>
                 <div className={styles.loudspeakerContainer}>
-                  <MessageIcon width={28} height={28} />
+                  <MessageIcon width={24} height={24} />
                 </div>
                 <div className={styles.imageContainer}>
                   <Image
