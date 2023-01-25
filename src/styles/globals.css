@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Condensed:wght@400;700&display=swap');
 @font-face {font-family: "CoreSansEW01-65Bold";
-    src: url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.svg#CoreSansEW01-65Bold") format("svg"); /* iOS 4.1- */
+    src: url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/e13324fa79d5805610e6a3b427b63337.svg#CoreSansEW01-65Bold") format("svg"); /* iOS 4.1- */
 }
 
 * {
