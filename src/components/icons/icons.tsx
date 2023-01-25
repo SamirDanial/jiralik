@@ -30,7 +30,7 @@ import sortby2 from "../../assets/iconsImg/icons/sort2.png";
 import more from "../../assets/iconsImg/icons/more.png";
 import leftalignment from "../../assets/iconsImg/icons/leftalign.png";
 import user from "../../assets/iconsImg/icons/user.png";
-import searchuser from "../../assets/iconsImg/icons/searchuser.png";
+import searchuser from "../../assets/iconsImg/icons/searchUser.png";
 import paidbill from "../../assets/iconsImg/icons/donelist.png";
 import checklist from "../../assets/iconsImg/icons/todo.png";
 import sms12 from "../../assets/iconsImg/icons/sms12.png";
