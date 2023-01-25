@@ -13,16 +13,17 @@
 
 .card .cardTitle span:nth-of-type(1) {
   font-size: 16px;
-  color: #353C4B;
+  color: #353c4b;
   -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: #353C4B;
+  -webkit-text-stroke-color: #353c4b;
 }
 
 .card .cardTitle span:nth-of-type(2) {
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
   color: #e75333;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #e75333;
 }
 
 .card .inputContainer {
@@ -91,7 +92,8 @@
   border: 1px solid #cbced3;
   border-radius: 5px;
   color: #0e8cff;
-  font-weight: bold;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #0e8cff;
 }
 
 .listSeparator {

@@ -29,7 +29,9 @@
 }
 
 .mainView .viewHeader .viewTitle > span {
-  font-weight: bold;
+  color: black;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
 }
 
 .mainView .viewHeader > span {

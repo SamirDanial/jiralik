@@ -18,7 +18,6 @@ const Filter = ({ onClick, top, left, right }: FilterProps) => {
         </div>
         <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
       </div>
-      <div className={styles.separator}></div>
       <div className={styles.content}>
         <div className={styles.projects}>
           <div className={styles.projectsHeader}>
