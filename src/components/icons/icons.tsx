@@ -28,10 +28,13 @@ import filter2 from "../../assets/iconsImg/icons/filter2.png";
 import sortby from "../../assets/iconsImg/icons/sort.png";
 import sortby2 from "../../assets/iconsImg/icons/sort2.png";
 import more from "../../assets/iconsImg/icons/more.png";
-import leftalignment from "../../assets/iconsImg/leftalignment.png";
-import user from "../../assets/iconsImg/user.png";
-import paidbill from "../../assets/iconsImg/paidbill.png";
-import checklist from "../../assets/iconsImg/checklist.png";
+import leftalignment from "../../assets/iconsImg/icons/leftalign.png";
+import user from "../../assets/iconsImg/icons/user.png";
+import searchuser from "../../assets/iconsImg/icons/searchuser.png";
+import paidbill from "../../assets/iconsImg/icons/donelist.png";
+import checklist from "../../assets/iconsImg/icons/todo.png";
+import sms12 from "../../assets/iconsImg/icons/sms12.png";
+import chain2 from "../../assets/iconsImg/icons/chain2.png";
 import bulletlist from "../../assets/iconsImg/bulletlist.png";
 import { TrashIcon, ArchiveBoxIcon, ClockIcon, ListBulletIcon, QueueListIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -471,6 +474,20 @@ export const UserIcon = ({ width, height }: IconType) => {
   );
 };
 
+export const UserSearchIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={searchuser}
+        alt="user icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
 export const PaidBillIcon = ({ width, height }: IconType) => {
   return (
     <div>
@@ -492,6 +509,34 @@ export const CheckListIcon = ({ width, height }: IconType) => {
         priority
         src={checklist}
         alt="check list icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Sms12Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={sms12}
+        alt="SMS 12 icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Chain2Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={chain2}
+        alt="chain 2 icon"
         width={width}
         height={height}
       />

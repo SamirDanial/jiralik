@@ -94,13 +94,14 @@
   
   .subHeaderContainer .filters .filterItem {
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 0px 7px;
     border: 1px solid #E6E7E9;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     gap:10;
     justify-content: center;
     align-items: center;
+    padding-top:2px;
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(1) {
