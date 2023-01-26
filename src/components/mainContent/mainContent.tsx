@@ -36,13 +36,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <p className={styles.stageName}>Backlog</p>
           <p className={styles.stageItemNumber}>(2)</p>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={20} height={20} />
+            <FilterIcon width={14} height={14} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={20} height={20} />
+            <SortIcon width={14} height={14} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={20} height={20} />
+            <MoreIcon width={18} height={18} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -52,7 +52,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <UserIcon width={20} height={20} />
+              <UserIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -62,10 +62,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -84,7 +86,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBank</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -94,12 +96,14 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -122,23 +126,23 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <div className={styles.filterIconContainer}>
             <FilterIcon
               onClick={() => setShowFilterBy((pre) => !pre)}
-              width={20}
-              height={20}
+              width={14}
+              height={14}
             />
             {showFilterBy && <Filter onClick={() => setShowFilterBy(false)} />}
           </div>
           <div className={styles.sortIconContainer}>
             <SortIcon
               onClick={() => setShowSortBy((pre) => !pre)}
-              width={20}
-              height={20}
+              width={14}
+              height={14}
             />
             <div className={styles.sortBy}>
               {showSortBy && <Sort onClick={() => setShowSortBy(false)} />}
             </div>
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={20} height={20} />
+            <MoreIcon width={18} height={18} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -148,7 +152,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>DW4RTeam</span>
               </div>
-              <UserSearchIcon width={24} height={24} />
+              <UserSearchIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -158,16 +162,18 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -195,16 +201,18 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -232,16 +240,18 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -270,16 +280,18 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -307,16 +319,18 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -337,16 +351,16 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Progress</span>
           <span className={styles.stageItemNumber}>(35)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={20} height={20} />
+            <FilterIcon width={14} height={14} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={20} height={20} />
+            <SortIcon width={14} height={14} />
           </div>
           <div className={styles.moreIconContainer}>
             <MoreIcon
               onClick={() => setShowActions((pre) => !pre)}
-              width={20}
-              height={20}
+              width={14}
+              height={14}
             />
           </div>
           {showActions && <MoreOption onClick={() => setShowActions(false)} />}
@@ -358,23 +372,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -393,23 +409,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -428,23 +446,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -463,23 +483,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -498,23 +520,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -533,23 +557,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -568,23 +594,25 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <UserSearchIcon width={20} height={20} />
+              <UserSearchIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
             </div>
             <div className={styles.labels}></div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <SmsIcon width={40} height={18} />
-              <span>12</span>
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
-              <ChainIcon width={20} height={20} />
-              <span>2</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -605,13 +633,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>In Review</span>
           <span className={styles.stageItemNumber}>(5)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={20} height={20} />
+            <FilterIcon width={14} height={14} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={20} height={20} />
+            <SortIcon width={14} height={14} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={20} height={20} />
+            <MoreIcon width={14} height={14} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -630,10 +658,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -652,7 +682,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContactRM</span>
               </div>
-              <UserSearchIcon width={20} height={20} />
+              <UserSearchIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -662,10 +692,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -684,7 +716,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <UserIcon width={20} height={20} />
+              <UserIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -694,10 +726,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -726,10 +760,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -748,7 +784,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>AgentBook</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -758,10 +794,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -782,13 +820,13 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
           <span className={styles.stageName}>Completed</span>
           <span className={styles.stageItemNumber}>(1)</span>
           <div className={styles.filterIconContainer}>
-            <FilterIcon width={20} height={20} />
+            <FilterIcon width={14} height={14} />
           </div>
           <div className={styles.sortIconContainer}>
-            <SortIcon width={20} height={20} />
+            <SortIcon width={14} height={14} />
           </div>
           <div className={styles.moreIconContainer}>
-            <MoreIcon width={20} height={20} />
+            <MoreIcon width={14} height={14} />
           </div>
         </div>
         <div className={styles.stageMembersContainer}>
@@ -798,7 +836,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -808,10 +846,12 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
               <span>api.contactrm</span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
+              <LeftAlignmentIcon width={14} height={14} />
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"

@@ -47,31 +47,48 @@
   }
   
   .mainContent .stage {
-    background-color: #EFF2F5;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    width: 245px;
+    padding-top: 8px;
+    gap: 8px;
+    width: 216px;
+    background-color: #EFF2F5;
+    border-radius: 8px;
   }
   
   .mainContent .stage .stageHeader {
     position: relative;
-    margin-top: 6px;
-    margin-left: 8px;
     display: flex;
     flex-direction: row;
+    margin-left: 8px;
+    margin-bottom: -5px;
   }
 
-  .mainContent .stage:nth-of-type(2) .stageHeader .sortIconContainer {
+  .mainContent .stage .stageHeader .sortIconContainer {
     position: relative;
+    opacity: 0.6;
   }
 
-  .mainContent .stage:nth-of-type(2) .stageHeader .filterIconContainer {
+  .mainContent .stage .stageHeader .sortIconContainer div img {
+    margin-top:3px
+  }
+
+  .mainContent .stage .stageHeader .filterIconContainer {
     position: relative;
+    opacity: 0.6;
   }
 
-  .mainContent .stage:nth-of-type(2) .stageHeader .moreIconContainer {
-    margin-left: 53px;
+  .mainContent .stage .stageHeader .filterIconContainer div img {
+    margin-top:3px
+  }
+
+  .mainContent .stage .stageHeader .moreIconContainer {
+    opacity: 0.6;
+  }
+
+  .mainContent .stage .stageHeader .moreIconContainer div img {
+    margin-top:3px;
+    margin-right: 8px;
   }
   
   .mainContent .stage .stageHeader .stageName {
@@ -83,9 +100,9 @@
   
   .mainContent .stage .stageHeader .stageItemNumber {
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 2px;
     margin-left: 5px;
-    color: gray
+    opacity: 0.6;
   }
   
   .mainContent .stage .stageHeader .filterIconContainer {
@@ -116,13 +133,21 @@
   
   .mainContent .stage .stageMembersContainer .stageMember {
     width: calc(100% - 20px);
-    padding: 10px 10px;
+    padding: 5px 5px;
     margin-left: 10px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+  }
+
+  .mainContent .stage .stageMembersContainer .stageMember .memberTitle span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #070F21;
+    opacity: 0.8;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .memberType {
@@ -138,22 +163,23 @@
   }
 
   .mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer .memberTypeNameStatus {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-top:6px;
+    padding: 2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin-top:3px;
+  }
+
+  .mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer span {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.6;
   }
   
   .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember:nth-of-type(1) .memberType .memberTypeNameContainer .memberTypeNameStatus {
     background-color: #FF3477;
-  }
-
-  .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
-    background-color: #FFEEDE;
-  }
-
-  .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember .labels span:nth-of-type(2) {
-    background-color: #F8D9F6;
   }
 
   .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember:nth-of-type(2) .memberType .memberTypeNameContainer .memberTypeNameStatus {
@@ -184,6 +210,48 @@
     background-color: #FF3477;
   }
 
+  .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember .labels span {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #070F21;
+    opacity: 0.8;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContent .stage:nth-of-type(4) .stageMembersContainer .stageMember .labels span {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #070F21;
+    opacity: 0.8;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContent .stage:nth-of-type(5) .stageMembersContainer .stageMember .labels span {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #070F21;
+    opacity: 0.8;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
+    background-color: #FFEEDE;
+  }
+
+  .mainContent .stage:nth-of-type(1) .stageMembersContainer .stageMember .labels span:nth-of-type(2) {
+    background-color: #F8D9F6;
+  }
+
   .mainContent .stage:nth-of-type(4) .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
     background-color: #FFEEDE;
   }
@@ -204,19 +272,8 @@
     background-color: #FF3477;
   }
 
-  .mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer > span {
-    font-family: 'Open Sans' !important;
-    color: #6A6F7A;
-  }
-
   .mainContent .stage:nth-of-type(2) .stageMembersContainer .stageMember:nth-of-type(1) .labels span:nth-of-type(1) {
     background-color: #DEEFFF;
-  }
-  
-  .mainContent .stage .stageMembersContainer .stageMember .memberTitle {
-    font-family: 'Open Sans' !important;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.3px;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .labels {
@@ -248,12 +305,14 @@
     margin-top: 5px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 5px;
-  }
-  
-  .mainContent .stage .stageMembersContainer .stageMember .leftAlignmentContainer span {
-    font-size: 16px;
-    color: gray;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.8;
+    margin-bottom: 5px;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .stageFooter {
@@ -263,12 +322,25 @@
     justify-content: space-between;
   }
   
-  .mainContent .stage .stageMembersContainer .stageMember .stageFooter span {
-    border-radius: 5px;
+  .mainContent .stage .stageMembersContainer .stageMember .stageFooter div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    gap: 10px;
+    width: 102px;
+    height: 17px;
+    background: rgba(7, 15, 33, 0.08);
+    border-radius: 4px;
+  }
+
+  .mainContent .stage .stageMembersContainer .stageMember .stageFooter div:nth-of-type(1) span {
+    font-weight: 500;
     font-size: 10px;
-    background-color: #EBECED;
-    padding: 3px 3px;
-    color: #797E87;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.5;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .stageFooter .imageContainer {
