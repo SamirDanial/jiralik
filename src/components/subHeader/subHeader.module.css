@@ -107,30 +107,31 @@
   
   .subHeaderContainer .filters .filterItem {
     cursor: pointer;
-    padding: 0px 7px;
+    position: relative;
+    width: 36px;
+    height: 36px;
     border: 1px solid #E6E7E9;
-    border-radius: 10px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap:5px;
     padding-top:2px;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(1) {
-    position: relative;
-  }
-
-  .subHeaderContainer .filters .filterItem:nth-of-type(2) {
-    position: relative;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.8;
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(3) {
-    position: relative;
+    width: 90px;
+  }
+
+  .subHeaderContainer .filters .filterItem:nth-of-type(4) {
+    width: 80px;
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
-    position: relative;
+    width: 95px;
   }
   
   @media screen and (width < 1250px) {
