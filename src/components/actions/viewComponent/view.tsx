@@ -14,7 +14,7 @@ const View = ({ onClick, toggleBackDropper, top, left, right }: ViewProps) => {
     <div className={styles.mainView} style={{top, left, right}}>
       <div className={styles.viewHeader}>
         <div className={styles.viewTitle}>
-          <FloppyIcon width={30} height={30} />
+          <FloppyIcon width={20} height={20} />
           <span>Views</span>
         </div>
         <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>

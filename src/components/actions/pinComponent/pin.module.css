@@ -1,5 +1,5 @@
 .mainView {
-  width: 300px;
+  width: 270px;
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 5px;
 }
 
 .mainView .viewHeader .viewTitle .PinIconContainer {
@@ -80,7 +81,7 @@
 
 .mainView .viewContent .stageMembersContainer .stageMember {
   width: calc(100% - 20px);
-  height: 130px;
+  height: 109px;
   padding: 10px 10px;
   margin-left: 10px;
   background-color: white;
@@ -105,6 +106,7 @@
   .memberTypeNameContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 5px;
 }
 
@@ -115,17 +117,31 @@
   .memberType
   .memberTypeNameContainer
   .memberTypeNameStatus {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   background-color: #ff3477;
   border-radius: 50%;
-  margin-top: 6px;
 }
 
+.mainView
+  .viewContent
+  .stageMembersContainer
+  .stageMember
+  .memberType
+  .memberTypeNameContainer span {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.6;
+  }
+
 .mainView .viewContent .stageMembersContainer .stageMember .memberTitle {
-  color: black;
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: black;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #070F21;
+  opacity: 0.8;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .labels {
@@ -141,12 +157,12 @@
   .stageMember
   .labels
   span:nth-of-type(1) {
-  border-radius: 10px;
-  background-color: #ffeede;
-  font-size: 12px;
-  padding: 0px 3px;
-  min-width: 60px;
-  min-height: 10px;
+  border-radius: 8px;
+  background-color: #FFC690;
+  font-size: 5px;
+  padding: 0px 1px;
+  min-width: 40px;
+  min-height: 5px;
 }
 
 .mainView
@@ -155,12 +171,12 @@
   .stageMember
   .labels
   span:nth-of-type(2) {
-  border-radius: 10px;
-  background-color: #ffdefc;
-  font-size: 12px;
-  padding: 0px 3px;
-  min-width: 60px;
-  min-height: 10px;
+  border-radius: 8px;
+  background-color: #FFA5F7;
+  font-size: 5px;
+  padding: 0px 1px;
+  min-width: 40px;
+  min-height: 5px;
 }
 
 .mainView
@@ -168,34 +184,45 @@
   .stageMembersContainer
   .stageMember
   .leftAlignmentContainer {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.mainView
-  .viewContent
-  .stageMembersContainer
-  .stageMember
-  .leftAlignmentContainer
-  span {
-  font-size: 16px;
-  color: gray;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.8;
+    margin-bottom: 5px;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .stageFooter {
-  top: 15px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.mainView .viewContent .stageMembersContainer .stageMember .stageFooter span {
-  border-radius: 5px;
+.mainView .viewContent .stageMembersContainer .stageMember .stageFooter  div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 10px;
+  width: 102px;
+  height: 17px;
+  background: rgba(7, 15, 33, 0.08);
+  border-radius: 4px;
+}
+
+.mainView .viewContent .stageMembersContainer .stageMember .stageFooter  div:nth-of-type(1) span {
+  font-weight: 500;
   font-size: 10px;
-  background-color: #ebeced;
-  padding: 3px 3px;
+  line-height: 12px;
+  color: #070F21;
+  opacity: 0.5;
 }
 
 .mainView

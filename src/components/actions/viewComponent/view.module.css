@@ -30,9 +30,10 @@
 }
 
 .mainView .viewHeader .viewTitle > span {
-    color: black;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: black;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #070F21;
 }
 
 .mainView .viewHeader > span {
@@ -65,6 +66,14 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+}
+
+.mainView .viewContent .filters .filter span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #070F21;
+    opacity: 0.7;
 }
 
 .mainView .viewContent .filters .filter:nth-of-type(1) > div {

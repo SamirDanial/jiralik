@@ -51,7 +51,8 @@
     flex-direction: column;
     padding-top: 8px;
     gap: 8px;
-    width: 216px;
+    min-width: 216px;
+    max-width: 360;
     background-color: #EFF2F5;
     border-radius: 8px;
   }

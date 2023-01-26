@@ -24,11 +24,18 @@
 .sorts .sortHeader div {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  align-items: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
 }
 
-.sorts .sortHeader > span {
-  color: #9c9fa6;
+.sorts .sortHeader div > span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #070F21;
+  margin-top:1px;
 }
 
 .sorts .sortHeader div span {
@@ -53,7 +60,9 @@
 }
 
 .sorts .sortList .sort {
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 @media screen and (width < 625px) {
