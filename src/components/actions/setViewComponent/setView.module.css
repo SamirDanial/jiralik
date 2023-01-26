@@ -9,7 +9,6 @@
   position: fixed;
   left: calc(50% - 300px);
   top: calc(50% - 200px);
-  z-index: 4;
 }
 
 .mainView .viewHeader {
