@@ -277,7 +277,7 @@
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #FFC690;
     font-size: 12px;
     padding: 0px 3px;
@@ -286,12 +286,30 @@
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .labels span:nth-of-type(2) {
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #FFA5F7;
     font-size: 12px;
     padding: 0px 3px;
     min-width: 60px;
     min-height: 10px;
+  }
+
+  .mainContent .stage:nth-of-type(2) .stageMembersContainer .stageMember .labels span:nth-of-type(1) {
+    border-radius: 8px;
+    background-color: #FFC690;
+    font-size: 12px;
+    padding: 0px 3px;
+    min-width: 40px;
+    min-height: 6px;
+  }
+  
+  .mainContent .stage:nth-of-type(2) .stageMembersContainer .stageMember .labels span:nth-of-type(2) {
+    border-radius: 8px;
+    background-color: #FFA5F7;
+    font-size: 12px;
+    padding: 0px 3px;
+    min-width: 40px;
+    min-height: 6px;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .leftAlignmentContainer {
