@@ -67,6 +67,7 @@ const Navbar = () => {
         <div className={styles.item}>
           <NotificationIcon width={24} height={24} />
           <p>Notifications</p>
+          <div className={styles.notify}></div>
         </div>
         <div className={styles.item}>
           <DocumentIcon width={24} height={24} />

@@ -32,7 +32,8 @@ import paidbill from "../../assets/svgIcon/billdone.svg";
 import checklist from "../../assets/svgIcon/todo.svg";
 import sms from "../../assets/svgIcon/sms.svg";
 import chain from "../../assets/svgIcon/chain.svg";
-import bulletlist from "../../assets/iconsImg/bulletlist.png";
+import donelist from '../../assets/svgIcon/checklist2.svg';
+import samplelist from '../../assets/svgIcon/samplelist.svg';
 import { TrashIcon, ArchiveBoxIcon, ClockIcon, ListBulletIcon, QueueListIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 type IconType = {
@@ -497,12 +498,26 @@ export const ChainIcon = ({ width, height }: IconType) => {
   );
 };
 
-export const BulletListIcon = ({ width, height }: IconType) => {
+export const DoneListIcon = ({ width, height }: IconType) => {
   return (
     <div>
       <Image
         priority
-        src={bulletlist}
+        src={donelist}
+        alt="bullet list icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const SampleListIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={samplelist}
         alt="bullet list icon"
         width={width}
         height={height}

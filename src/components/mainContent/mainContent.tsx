@@ -12,6 +12,8 @@ import {
   SortIcon,
   UserIcon,
   UserSearchIcon,
+  DoneListIcon,
+  SampleListIcon,
 } from "../icons/icons";
 import styles from "./mainContent.module.css";
 import Image from "next/image";
@@ -867,10 +869,10 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
         </div>
       </div>
       <div className={styles.todoList}>
-        <ListIcon width={20} height={20} />
+        <DoneListIcon width={30} height={30} />
       </div>
       <div className={styles.taskList}>
-        <QueueIcon width={20} height={20} />
+        <SampleListIcon width={30} height={30} />
       </div>
     </div>
   );

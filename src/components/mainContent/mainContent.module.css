@@ -19,7 +19,7 @@
   .mainContent .todoList {
     position: fixed;
     right: 0;
-    top: 400px;
+    top: 500px;
     width: 30px;
     height: 30px;
     background-color: #0E8CFF;
@@ -34,7 +34,7 @@
   .mainContent .taskList {
     position: fixed;
     right: 0;
-    top: 440px;
+    top: 550px;
     width: 30px;
     height: 30px;
     background-color: #6248FF;
