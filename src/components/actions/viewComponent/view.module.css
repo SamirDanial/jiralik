@@ -8,6 +8,7 @@
     border: 1px solid #E6E7E9;
     top: 50px;
     right: -3px;
+    z-index: 4;
 }
 
 .mainView .viewHeader {

@@ -63,33 +63,6 @@
     margin-left: 8px;
     margin-bottom: -5px;
   }
-
-  .mainContent .stage .stageHeader .sortIconContainer {
-    position: relative;
-    opacity: 0.6;
-  }
-
-  .mainContent .stage .stageHeader .sortIconContainer div img {
-    margin-top:3px
-  }
-
-  .mainContent .stage .stageHeader .filterIconContainer {
-    position: relative;
-    opacity: 0.6;
-  }
-
-  .mainContent .stage .stageHeader .filterIconContainer div img {
-    margin-top:3px
-  }
-
-  .mainContent .stage .stageHeader .moreIconContainer {
-    opacity: 0.6;
-  }
-
-  .mainContent .stage .stageHeader .moreIconContainer div img {
-    margin-top:3px;
-    margin-right: 8px;
-  }
   
   .mainContent .stage .stageHeader .stageName {
     margin-top: 2px;
@@ -106,23 +79,42 @@
   }
   
   .mainContent .stage .stageHeader .filterIconContainer {
+    position: relative;
     cursor: pointer;
     margin-top: 1px;
     margin-left: 10px;
   }
+
+  .mainContent .stage .stageHeader .filterIconContainer div img {
+    margin-top:3px;
+    opacity: 0.6;
+  }
   
   .mainContent .stage .stageHeader .sortIconContainer {
+    position: relative;
     cursor: pointer;
     margin-top: 1px;
     margin-left: 3px;
   }
+
+  .mainContent .stage .stageHeader .sortIconContainer div img {
+    margin-top:3px;
+    opacity: 0.6;
+  }
   
   .mainContent .stage .stageHeader .moreIconContainer {
+    position: relative;
     cursor: pointer;
     flex-grow: 1;
     margin-top: 1px;
     text-align: right;
     margin-right: 8px;
+  }
+
+  .mainContent .stage .stageHeader .moreIconContainer div img {
+    margin-top:3px;
+    margin-right: 8px;
+    opacity: 0.6;
   }
   
   .mainContent .stage .stageMembersContainer {
@@ -335,7 +327,7 @@
     border-radius: 4px;
   }
 
-  .mainContent .stage .stageMembersContainer .stageMember .stageFooter div:nth-of-type(1) span {
+  .mainContent .stage .stageMembersContainer .stageMember .stageFooter > div:nth-of-type(1) span {
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;

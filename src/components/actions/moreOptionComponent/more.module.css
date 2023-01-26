@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 10px;
   border: 1px solid #e6e7e9;
+  z-index: 4;
 }
 
 .actions .actionHeader {

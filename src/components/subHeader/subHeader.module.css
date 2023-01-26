@@ -118,6 +118,13 @@
     padding-top:2px;
     font-size: 13px;
     font-weight: 400;
+  }
+
+  .subHeaderContainer .filters .filterItem > div img {
+    opacity: 0.8;
+  }
+
+  .subHeaderContainer .filters .filterItem span {
     opacity: 0.8;
   }
 
