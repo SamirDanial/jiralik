@@ -6,7 +6,9 @@
   }
   
   .subHeaderContainer .subHeader {
-    padding: 17.5px 20px;
+    padding: 17.5px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,8 +118,13 @@
     align-items: center;
     gap:5px;
     padding-top:2px;
-    font-size: 13px;
+  }
+
+  .subHeaderContainer .filters .filterItem > span {
     font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #070F21;
   }
 
   .subHeaderContainer .filters .filterItem > div img {
@@ -129,15 +136,16 @@
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(3) {
-    width: 90px;
+    width: 70px;
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(4) {
-    width: 80px;
+    width: 70px;
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
-    width: 95px;
+    width: 80px;
+    height: 35px;
   }
   
   @media screen and (width < 1250px) {
