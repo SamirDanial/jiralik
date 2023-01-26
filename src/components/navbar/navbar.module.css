@@ -1,12 +1,11 @@
 .navbar {
-  width: 350px;
-  height: 100vh;
+  width: 270px;
+  height: 1024px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   border-right: 1px solid #ebeced;
   position: sticky;
-  top: -35px;
 }
 
 .navbar .header {
@@ -19,8 +18,16 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  margin: 29px 25px;
+  margin: 26.5px 25px;
   width: 100%;
+}
+
+.navbar .header .content div:nth-of-type(3) {
+  margin-top: 3px;
+}
+
+.navbar .header .content div:nth-of-type(4) {
+  margin-top: 3px;
 }
 
 .navbar .header .content .status {
@@ -59,27 +66,11 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-}
-
-.navbar .items .item > p {
-  color: #858a93;
+  opacity: 0.6;
 }
 
 .navbar .items .item:nth-of-type(1) {
   margin-top: 15px;
-}
-
-.navbar .items .item:nth-of-type(2) {
-  background-color: #f6f6ff;
-  border-radius: 10px;
-  padding-left: 15px;
-  padding-right: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.navbar .items .item:nth-of-type(2) > p {
-  color: black;
 }
 
 .navbar .navbarFooter {
@@ -95,10 +86,7 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-}
-
-.navbar .navbarFooter .navbarFooterItem > p {
-  color: #6a6f7a;
+  opacity: 0.6;
 }
 
 .navbar2 {
@@ -153,12 +141,17 @@
   flex-direction: column;
 }
 
+.navbar2 .items .item:nth-of-type(1) {
+  opacity: 1;
+}
+
 .navbar2 .items .item {
   padding: 14px 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  opacity: 0.6;
 }
 
 .navbar2 .items .item:nth-of-type(1) {
@@ -178,7 +171,7 @@
     width: 80px;
   }
   .navbar .header .content .status {
-    margin-top: 10px;
+    margin-top: 13px;
   }
   .navbar .header .content .companyName {
     display: none;
@@ -189,17 +182,11 @@
   .navbar .header .content div:nth-of-type(4) {
     display: none;
   }
-  .navbar .items {
-    margin-top: 0px;
-  }
-  .navbar .items .item {
-    padding: 10px 20px;
+  .navbar .items .item:nth-of-type(1) {
+    opacity: 1;
   }
   .navbar .items .item p {
     display: none;
-  }
-  .navbar .navbarFooter .navbarFooterItem {
-    padding: 15px 20px;
   }
 
   .navbar .items .item:nth-of-type(2) {

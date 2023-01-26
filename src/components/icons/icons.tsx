@@ -1,6 +1,7 @@
 import Image from "next/image";
 import dashboard from "../../assets/svgIcon/dashboard.svg";
 import workflow from "../../assets/svgIcon/workflow.svg";
+import workflowwhite from "../../assets/svgIcon/workflowwhite.svg";
 import calendar from "../../assets/svgIcon/calendar.svg";
 import socialrm from "../../assets/svgIcon/socialrm.svg";
 import metrics from "../../assets/svgIcon/metrics.svg";
@@ -60,6 +61,20 @@ export const WorkflowIcon = ({ width, height }: IconType) => {
       <Image
         priority
         src={workflow}
+        alt="workFlow icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const WorkFlowWhiteIcon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={workflowwhite}
         alt="workFlow icon"
         width={width}
         height={height}

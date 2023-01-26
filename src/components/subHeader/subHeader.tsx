@@ -10,7 +10,7 @@ import {
   PenIcon,
   PinIcon,
   SortIcon,
-  WorkflowIcon,
+  WorkFlowWhiteIcon,
 } from "../icons/icons";
 import Sort from '../actions/sortComponent/sort';
 import Filter from '../actions/filterComponent/filter';
@@ -38,7 +38,7 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
           <div className={styles.actions}>
             <div className={styles.actionsContainer}>
               <div className={styles.actionContainer}>
-                <WorkflowIcon width={20} height={20} />
+                <WorkFlowWhiteIcon width={20} height={20} />
               </div>
               <div className={styles.actionContainer}>
                 <PenIcon width={20} height={20} />

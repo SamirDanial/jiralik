@@ -28,10 +28,10 @@ const Navbar = () => {
             <p>Zaan Corp</p>
           </div>
           <div>
-            <SingleDownArrowIcon width={10} height={10} />
+            <SingleDownArrowIcon width={15} height={15} />
           </div>
           <div className={styles.doubleLeft} onClick={() => setToggleSideBar(false)}>
-            <DoubleLeftArrowIcon width={15} height={15} />
+            <DoubleLeftArrowIcon width={20} height={20} />
           </div>
         </div>
       </div>
