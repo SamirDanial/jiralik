@@ -272,7 +272,7 @@ const MainContent = ({ toggleBackDropper }: MainContentProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <UserIcon width={24} height={24} />
+              <UserIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
