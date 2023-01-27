@@ -162,6 +162,7 @@
   height: 40px;
   width: 100%;
   border: none;
+  border-bottom: 1px solid #E6E7E9;
 }
 
 .mainView .viewContent .search > input:focus-visible {
@@ -179,6 +180,8 @@
   max-height: 80vh;
   overflow-y: scroll;
   background-color: #eff2f5;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember {
