@@ -11,7 +11,7 @@ const Sort = ({onClick, top, left, right} : SortProp) => {
         <div className={styles.sorts} style={{top: top, left: left, right: right}}>
                   <div className={styles.sortHeader}>
                     <div>
-                      <SortIcon width={20} height={20} />
+                      <SortIcon width={16} height={16} />
                       <span>Sort By</span>
                     </div>
                     <span onClick={onClick}><XMarkCIcon width={24} height={24} /></span>
