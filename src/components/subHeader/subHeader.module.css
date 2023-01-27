@@ -142,7 +142,6 @@
 
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
     width: 85px;
-    height: 35px;
   }
   
   @media screen and (width < 1250px) {
