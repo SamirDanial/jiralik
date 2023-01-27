@@ -148,6 +148,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /* .mainContent .stage .stageMembersContainer .stageMember .memberType div:nth-of-type(2) {
+    opacity: 0.6;
+  } */
   
   .mainContent .stage .stageMembersContainer .stageMember .memberType .memberTypeNameContainer {
     display: flex;

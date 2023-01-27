@@ -9,6 +9,7 @@
   flex-direction: column;
   gap: 10px;
   border: 1px solid #e6e7e9;
+  box-shadow: 10px 10px 5px -12px rgba(0,0,0,0.75);
   z-index: 4;
 }
 
