@@ -3,7 +3,7 @@
   width: 600px;
   height: 400px;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -90,7 +90,7 @@
 .mainView .viewContent .viewName .viewNameInput .colorPicker > span {
   width: 20px;
   height: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   background-color: black;
 }
@@ -125,7 +125,7 @@
 
 .mainView .viewContent .viewOthers .viewOthersInput > input {
   height: 35px;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 100%;
   border: 1px solid #e6e7e9;
   padding-left: 15px;
@@ -200,7 +200,7 @@
   cursor: pointer;
   padding: 11px 15px;
   background-color: lightgreen;
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
 }
 
@@ -208,7 +208,7 @@
   cursor: pointer;
   padding: 11px 15px;
   background-color: #f5f5f6;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 @media screen and (width < 625px) {
