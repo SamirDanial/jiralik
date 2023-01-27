@@ -35,12 +35,12 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #070F21;
+  color: #070F21 !important;
   margin-top:1px;
 }
 
 .sorts .sortHeader > span {
-  opacity: 0.4;
+  opacity: 0.4 !important;
 }
 
 .sorts .separator {
