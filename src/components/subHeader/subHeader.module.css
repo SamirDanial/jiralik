@@ -104,6 +104,8 @@
   }
   
   .subHeaderContainer .filters .filterItem {
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     position: relative;
     width: 36px;
@@ -111,8 +113,6 @@
     border: 1px solid #E6E7E9;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap:5px;
     padding-top:2px;
   }
@@ -141,7 +141,7 @@
   }
 
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
-    width: 80px;
+    width: 85px;
     height: 35px;
   }
   
