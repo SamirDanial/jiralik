@@ -1,10 +1,12 @@
 import { useState } from "react";
 import {
   ArchiveIcon,
+  ChainIcon,
   CheckListIcon,
   LeftAlignmentIcon,
   PaidBillIcon,
   SearchIcon,
+  SmsIcon,
   UserIcon,
   XMarkCIcon,
 } from "@/components/icons/icons";
@@ -63,7 +65,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>DW4RTeam</span>
               </div>
-              <UserIcon width={20} height={20} />
+              <UserIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -73,12 +75,18 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -130,7 +138,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>Asteler.io</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -140,12 +148,18 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -197,7 +211,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -207,12 +221,18 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -264,7 +284,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -274,12 +294,18 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"
@@ -331,7 +357,7 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
                 <div className={styles.memberTypeNameStatus}></div>
                 <span>ContractRM</span>
               </div>
-              <PaidBillIcon width={20} height={20} />
+              <PaidBillIcon width={14} height={14} />
             </div>
             <div className={styles.memberTitle}>
               <span>Design a website</span>
@@ -341,12 +367,18 @@ const Archive = ({ onClick, top, left, right }: ArchiveProps) => {
               <span></span>
             </div>
             <div className={styles.leftAlignmentContainer}>
-              <LeftAlignmentIcon width={20} height={20} />
-              <CheckListIcon width={20} height={20} />
-              <span>8/9</span>
+              <LeftAlignmentIcon width={14} height={14} />
+              <SmsIcon width={14} height={14} />
+              <span className={styles.number}>12</span>
+              <CheckListIcon width={14} height={14} />
+              <span className={styles.number}>8/9</span>
+              <ChainIcon width={14} height={14} />
+              <span className={styles.number}>2</span>
             </div>
             <div className={styles.stageFooter}>
-              <span>Created 3 days ago</span>
+              <div>
+                <span>Created 3 days ago</span>
+              </div>
               <div className={styles.imageContainer}>
                 <Image
                   src="https://t3.ftcdn.net/jpg/03/16/72/46/360_F_316724643_wxdsyAe8bDlAtEqVrRSi8HhMXSiNdZXP.jpg"

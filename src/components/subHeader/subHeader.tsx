@@ -139,7 +139,7 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
             <FilterIcon onClick={() => setShowFilterBy(pre => !pre)} width={16} height={16} />
             <span onClick={() => setShowFilterBy(pre => !pre)}>Filter</span>
             {
-              showFilterBy && <Filter top={50} left={-225} onClick={() => setShowFilterBy(false)} />
+              showFilterBy && <Filter top={40} left={-230} onClick={() => setShowFilterBy(false)} />
             }
           </div>
           <div className={styles.filterItem}>
@@ -147,7 +147,7 @@ const SubMenu = ({ toggleBackDropper }: SubMenuType) => {
             <span onClick={() => setShowSortBy(pre => !pre)} >Sort by</span>
             <div className={styles.sortBy}>
               {showSortBy && (
-                <Sort top={51} left={-103} onClick={() => setShowSortBy(false)} />
+                <Sort top={40} left={-120} onClick={() => setShowSortBy(false)} />
               )}
             </div>
           </div>

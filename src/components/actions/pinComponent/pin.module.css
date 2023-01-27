@@ -1,12 +1,12 @@
 .mainView {
-  width: 270px;
+  width: 297px;
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   position: absolute;
   border: 1px solid #e6e7e9;
-  top: 50px;
+  top: 40px;
   right: -3px;
   box-shadow: 10px 10px 5px -12px rgba(0,0,0,0.75);
   z-index: 4;
@@ -75,7 +75,7 @@
 
 .mainView .viewContent .stageMembersContainer {
   cursor: pointer;
-  max-height: 60vh;
+  max-height: 80vh;
   overflow-y: scroll;
   background-color: #eff2f5;
 }

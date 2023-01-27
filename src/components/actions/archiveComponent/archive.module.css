@@ -1,12 +1,12 @@
 .mainView {
-  width: 300px;
+  width: 297px;
   background-color: #ffffff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   position: absolute;
   border: 1px solid #e6e7e9;
-  top: 50px;
+  top: 40px;
   right: -3px;
   box-shadow: 10px 10px 5px -12px rgba(0,0,0,0.75);
   z-index: 4;
@@ -34,22 +34,25 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #ffffff;
   background-color: #6248ff;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder > span {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder .archiveIcon {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder2 {
@@ -57,22 +60,26 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: black;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #000000;
   background-color: #e6e7e9;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder2 > span {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #070F21;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder2 .archiveIcon {
-  margin-top: 2px;
+  margin-top: 3px;
+  opacity: 0.5;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder {
@@ -80,22 +87,26 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: black;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #000000;
   background-color: #e6e7e9;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder > span {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #070F21;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder .snoozeIcon {
-  margin-top: 2px;
+  margin-top: 3px;
+  opacity: 0.5;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder2 {
@@ -103,22 +114,25 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #ffffff;
   background-color: #6248ff;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder2 > span {
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder2 .snoozeIcon {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .mainView .viewHeader .viewTitle > span {
@@ -162,7 +176,7 @@
 
 .mainView .viewContent .stageMembersContainer {
   cursor: pointer;
-  max-height: 60vh;
+  max-height: 80vh;
   overflow-y: scroll;
   background-color: #eff2f5;
 }
@@ -203,19 +217,34 @@
   .stageMembersContainer
   .stageMember
   .memberType
+  .memberTypeNameContainer span {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.6;
+}
+
+.mainView
+  .viewContent
+  .stageMembersContainer
+  .stageMember
+  .memberType
   .memberTypeNameContainer
   .memberTypeNameStatus {
-  width: 8px;
-  height: 8px;
-  background-color: #ff3477;
-  border-radius: 50%;
-  margin-top: 6px;
+    width: 5px;
+    height: 5px;
+    background-color: #ff3477;
+    border-radius: 50%;
+    margin-top: 3px;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .memberTitle {
-  color: black;
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: black;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #070F21;
+  opacity: 0.8;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .labels {
@@ -232,11 +261,11 @@
   .labels
   span:nth-of-type(1) {
   border-radius: 10px;
-  background-color: #ffeede;
+  background-color: #FFC690;
   font-size: 12px;
   padding: 0px 3px;
-  min-width: 60px;
-  min-height: 10px;
+  min-width: 40px;
+  min-height: 6px;
 }
 
 .mainView
@@ -246,11 +275,11 @@
   .labels
   span:nth-of-type(2) {
   border-radius: 10px;
-  background-color: #ffdefc;
+  background-color: #FFA5F7;
   font-size: 12px;
   padding: 0px 3px;
-  min-width: 60px;
-  min-height: 10px;
+  min-width: 40px;
+  min-height: 6px;
 }
 
 .mainView
@@ -258,34 +287,45 @@
   .stageMembersContainer
   .stageMember
   .leftAlignmentContainer {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.mainView
-  .viewContent
-  .stageMembersContainer
-  .stageMember
-  .leftAlignmentContainer
-  span {
-  font-size: 16px;
-  color: gray;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #070F21;
+    opacity: 0.8;
+    margin-bottom: 5px;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .stageFooter {
-  top: 15px;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.mainView .viewContent .stageMembersContainer .stageMember .stageFooter span {
-  border-radius: 5px;
+.mainView .viewContent .stageMembersContainer .stageMember .stageFooter div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 10px;
+  width: 102px;
+  height: 17px;
+  background: rgba(7, 15, 33, 0.08);
+  border-radius: 4px;
+}
+
+.mainView .viewContent .stageMembersContainer .stageMember .stageFooter div:nth-of-type(1) span {
+  font-weight: 500;
   font-size: 10px;
-  background-color: #ebeced;
-  padding: 3px 3px;
+  line-height: 12px;
+  color: #070F21;
+  opacity: 0.5;
 }
 
 .mainView
@@ -306,12 +346,13 @@
     margin-top: 5px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 5px;
-    top: 83.5%;
-    width: 277px;
+    top: 77%;
+    width: 100%;
     left: 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     padding: 5px;
 }
 
@@ -323,22 +364,33 @@
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .archiveMessage > span {
-    font-size: 14px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: rgba(7, 15, 33, 0.6);
+}
+
+.mainView .viewContent .stageMembersContainer .stageMember .archiveMessage > span b {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #070F21;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .snoozeMessage {
-    position: absolute;
-    background-color: #E9E5FF;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    top: 83.5%;
-    width: 277px;
-    left: 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 5px;
+  position: absolute;
+  background-color: #E9E5FF;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  top: 77%;
+  width: 100%;
+  left: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 5px;
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .snoozeMessage .imageContainer {
@@ -349,7 +401,17 @@
 }
 
 .mainView .viewContent .stageMembersContainer .stageMember .snoozeMessage > span {
-    font-size: 14px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: rgba(7, 15, 33, 0.6);
+}
+
+.mainView .viewContent .stageMembersContainer .stageMember .snoozeMessage > span b {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #070F21;
 }
 
 @media screen and (width < 770px) {
