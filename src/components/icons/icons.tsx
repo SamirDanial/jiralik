@@ -34,6 +34,10 @@ import sms from "../../assets/svgIcon/sms.svg";
 import chain from "../../assets/svgIcon/chain.svg";
 import donelist from '../../assets/svgIcon/checklist2.svg';
 import samplelist from '../../assets/svgIcon/samplelist.svg';
+import archive1 from '../../assets/svgIcon/archive1.svg';
+import archive2 from '../../assets/svgIcon/archive2.svg';
+import snooze1 from '../../assets/svgIcon/snooze1.svg';
+import snooze2 from '../../assets/svgIcon/snooze2.svg';
 import { TrashIcon, ArchiveBoxIcon, ClockIcon, ListBulletIcon, QueueListIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 type IconType = {
@@ -416,7 +420,7 @@ export const LeftAlignmentIcon = ({ width, height }: IconType) => {
 
 export const UserIcon = ({ width, height }: IconType) => {
   return (
-    <div>
+    <div style={{opacity: 0.6}}>
       <Image
         priority
         src={user}
@@ -519,6 +523,62 @@ export const SampleListIcon = ({ width, height }: IconType) => {
         priority
         src={samplelist}
         alt="bullet list icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Archive1Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={archive1}
+        alt="archive icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Archive2Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={archive2}
+        alt="archive icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Snooze1Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={snooze1}
+        alt="snooze icon"
+        width={width}
+        height={height}
+      />
+    </div>
+  );
+};
+
+export const Snooze2Icon = ({ width, height }: IconType) => {
+  return (
+    <div>
+      <Image
+        priority
+        src={snooze2}
+        alt="snooze icon"
         width={width}
         height={height}
       />

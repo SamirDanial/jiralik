@@ -18,7 +18,7 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  margin: 26.5px 25px;
+  margin: 24.6px 29px;
   width: 100%;
 }
 
@@ -133,8 +133,8 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  margin-left: 25px;
-  margin-bottom: 33px;
+  margin-left: 29px;
+  margin-bottom: 31px;
   padding-top: 4px;
   width: 100%;
 }
@@ -144,7 +144,7 @@
   height: 14px;
   border-radius: 100%;
   background-color: #27e1bf;
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
 .navbar2 .header .content .companyName {

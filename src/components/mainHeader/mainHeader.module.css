@@ -1,5 +1,6 @@
 .mainHeaderContainer {
   border-bottom: 1px solid #EBECED;
+  padding: 18px 30px;
 }
 
 .mainHeaderContainer .mainHeader {
@@ -7,10 +8,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
   gap: 10px;
-  height: 80px;
 }
 
 .mainHeaderContainer .mainHeader .colleagues {

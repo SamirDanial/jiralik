@@ -36,10 +36,10 @@
   gap: 5px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
   color: #ffffff;
   background-color: #6248ff;
 }
@@ -62,10 +62,10 @@
   gap: 5px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
   color: #000000;
   background-color: #e6e7e9;
 }
@@ -89,10 +89,10 @@
   gap: 5px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
   color: #000000;
   background-color: #e6e7e9;
 }
@@ -116,10 +116,10 @@
   gap: 5px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
   color: #ffffff;
   background-color: #6248ff;
 }
