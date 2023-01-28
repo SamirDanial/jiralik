@@ -140,8 +140,16 @@
     width: 70px;
   }
 
+  .subHeaderContainer .filters .filterItem:nth-of-type(4) div img {
+    opacity: 0.6;
+  }
+
   .subHeaderContainer .filters .filterItem:nth-of-type(5) {
     width: 85px;
+  }
+
+  .subHeaderContainer .filters .filterItem:nth-of-type(5) div img {
+    opacity: 0.6;
   }
   
   @media screen and (width < 1250px) {

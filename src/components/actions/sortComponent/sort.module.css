@@ -36,7 +36,8 @@
   font-size: 15px;
   line-height: 20px;
   color: #070F21 !important;
-  margin-top:1px;
+  opacity: 0.8;
+  margin-top:2px;
 }
 
 .sorts .sortHeader > span {
