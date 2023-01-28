@@ -49,6 +49,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .mainView .viewHeader .viewTitle .archiveHolder .archiveIcon {
@@ -129,6 +130,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
+  opacity: 1;
 }
 
 .mainView .viewHeader .viewTitle .snoozeHolder2 .snoozeIcon {
