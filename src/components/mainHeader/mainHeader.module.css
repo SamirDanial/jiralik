@@ -41,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
 }
 
 .mainHeaderContainer .mainHeader .colleagues .batchContainer span {
@@ -50,20 +49,12 @@
   line-height: 12px;
 }
 
-.mainHeaderContainer .mainHeader .colleagues .batchContainer2 {
-  padding: 3px 5px;
-  border-radius: 4px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #B0A1DF;
+.mainHeaderContainer .mainHeader .colleagues .batchContainer:nth-of-type(2) {
+  background-color: orange;
 }
 
-.mainHeaderContainer .mainHeader .colleagues .batchContainer2 span {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
+.mainHeaderContainer .mainHeader .colleagues .batchContainer:nth-of-type(5) {
+  background-color: #B0A1DF;
 }
 
 .mainHeaderContainer .mainHeader .colleagues .separator {

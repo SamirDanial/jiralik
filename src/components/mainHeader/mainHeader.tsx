@@ -43,7 +43,7 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
               height={40}
             />
           </div>
-          <div className={styles.batchContainer2}>
+          <div className={styles.batchContainer}>
             <span>11</span>
           </div>
           <div className={styles.downArrowButton}>
