@@ -84,8 +84,8 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
               unoptimized
               priority
               alt="bat man"
-              width={50}
-              height={50}
+              width={38}
+              height={38}
             />
           </div>
         </div>
