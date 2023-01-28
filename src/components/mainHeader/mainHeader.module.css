@@ -35,7 +35,7 @@
 
 
 .mainHeaderContainer .mainHeader .colleagues .batchContainer {
-  padding: 0px 5px;
+  padding: 3px 5px;
   border-radius: 4px;
   color: white;
   display: flex;
@@ -44,14 +44,26 @@
   background-color: orange;
 }
 
+.mainHeaderContainer .mainHeader .colleagues .batchContainer span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 .mainHeaderContainer .mainHeader .colleagues .batchContainer2 {
-  padding: 0px 5px;
+  padding: 3px 5px;
   border-radius: 4px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #B0A1DF;
+}
+
+.mainHeaderContainer .mainHeader .colleagues .batchContainer2 span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .mainHeaderContainer .mainHeader .colleagues .separator {
