@@ -74,12 +74,8 @@
 
 .mainHeaderContainer .mainHeader .colleagues .downArrowButton div {
   position: absolute;
-  top: 27%;
-  left: 30%;
-}
-
-.mainHeaderContainer .mainHeader .colleagues .downArrowButton div img {
-  margin-top: 1px !important;
+  top: 3px;
+  left: 4.5px;
 }
 
 .mainHeaderContainer .mainHeader .search {

@@ -48,7 +48,7 @@ const MainHeader = ({ toggleBackDropper }: MainHeaderType) => {
           </div>
           <div className={styles.downArrowButton}>
             <div>
-              <SingleDownArrowIcon width={15} height={15} />
+              <SingleDownArrowIcon width={22} height={22} />
             </div>
           </div>
         </div>
