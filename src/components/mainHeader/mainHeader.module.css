@@ -78,6 +78,10 @@
   left: 30%;
 }
 
+.mainHeaderContainer .mainHeader .colleagues .downArrowButton div img {
+  margin-top: 1px !important;
+}
+
 .mainHeaderContainer .mainHeader .search {
   flex-grow: 72;
   display: flex;
@@ -93,6 +97,11 @@
   height: 40px;
   width: 40px;
   border-radius: 8px;
+  opacity: 0.8;
+}
+
+.mainHeaderContainer .mainHeader .search .questionIconContainer div img {
+  margin-top: 2px;
 }
 
 .mainHeaderContainer .mainHeader .search .plusContainer {
