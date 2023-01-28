@@ -129,8 +129,11 @@
   height: 40px;
   border-radius: 8px;
   border: 1px solid #E6E7E9;
-  font-size: 15px;
   padding-left: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #9C9FA6;
 }
 
 .mainHeaderContainer .mainHeader .profile {
