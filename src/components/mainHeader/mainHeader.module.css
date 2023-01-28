@@ -145,6 +145,10 @@
   border-radius: 8px;
 }
 
+.mainHeaderContainer .mainHeader .profile .loudspeakerContainer:nth-of-type(2) {
+  opacity: 0.8;
+}
+
 .mainHeaderContainer .mainHeader .profile .imageContainer {
   width: 38px;
   height: 38px;
