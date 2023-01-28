@@ -326,8 +326,12 @@
     font-size: 10px;
     line-height: 12px;
     color: #070F21;
-    opacity: 0.8;
+    opacity: 0.8 !important;
     margin-bottom: 5px;
+  }
+
+  .mainContent .stage .stageMembersContainer .stageMember .leftAlignmentContainer .number {
+    opacity: 0.6;
   }
   
   .mainContent .stage .stageMembersContainer .stageMember .stageFooter {

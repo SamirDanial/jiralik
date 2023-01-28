@@ -201,6 +201,14 @@
     margin-bottom: 5px;
 }
 
+.mainView
+  .viewContent
+  .stageMembersContainer
+  .stageMember
+  .leftAlignmentContainer .number {
+    opacity: 0.6;
+  }
+
 .mainView .viewContent .stageMembersContainer .stageMember .stageFooter {
   margin-top: 5px;
   display: flex;
