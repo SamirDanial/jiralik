@@ -78,7 +78,7 @@
 }
 
 .navbar .items .item:nth-of-type(1) {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .navbar .items .item:nth-of-type(2) {
@@ -186,7 +186,7 @@
 }
 
 .navbar2 .items .item:nth-of-type(1) {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .navbar2 .items .item p {
@@ -202,7 +202,7 @@
     width: 80px;
   }
   .navbar .header {
-    height: 81px;
+    height: 77px;
   }
   .navbar .header .content .status {
     margin-top:6px;
