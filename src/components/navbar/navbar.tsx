@@ -37,50 +37,50 @@ const Navbar = () => {
       </div>
       <div className={styles.items}>
         <div className={styles.item}>
-          <DashboardIcon width={24} height={24} />
+          <DashboardIcon width={22} height={22} />
           <p>Dashboard</p>
         </div>
         <div className={styles.item}>
-          <WorkflowIcon width={24} height={24} />
+          <WorkflowIcon width={22} height={22} />
           <p>Workflow</p>
         </div>
         <div className={styles.item}>
-          <CalendarIcon width={24} height={24} />
+          <CalendarIcon width={22} height={22} />
           <p>Calendar</p>
         </div>
         <div className={styles.item}>
-          <SocialRMIcon width={24} height={24} />
+          <SocialRMIcon width={22} height={22} />
           <p>SocialRM</p>
         </div>
         <div className={styles.item}>
-          <MetricsIcon width={24} height={24} />
+          <MetricsIcon width={22} height={22} />
           <p>Metrics</p>
         </div>
         <div className={styles.item}>
-          <LeadsIcon width={24} height={24} />
+          <LeadsIcon width={22} height={22} />
           <p>Leads</p>
         </div>
         <div className={styles.item}>
-          <UsersIcon width={24} height={24} />
+          <UsersIcon width={22} height={22} />
           <p>Users</p>
         </div>
         <div className={styles.item}>
-          <NotificationIcon width={24} height={24} />
+          <NotificationIcon width={22} height={22} />
           <p>Notifications</p>
           <div className={styles.notify}></div>
         </div>
         <div className={styles.item}>
-          <DocumentIcon width={24} height={24} />
+          <DocumentIcon width={22} height={22} />
           <p>Documents</p>
         </div>
         <div className={styles.item}>
-          <SegmentIcon width={24} height={24} />
+          <SegmentIcon width={22} height={22} />
           <p>Segments</p>
         </div>
       </div>
       <div className={styles.navbarFooter}>
         <div className={styles.navbarFooterItem}>
-          <CompanyIcon width={24} height={24} />
+          <CompanyIcon width={22} height={22} />
           <p>Company</p>
         </div>
       </div>
