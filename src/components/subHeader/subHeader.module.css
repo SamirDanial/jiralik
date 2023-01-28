@@ -117,6 +117,10 @@
     padding-top:2px;
   }
 
+  .subHeaderContainer .filters .filterItem div img {
+    margin-top: 1px !important;
+  }
+
   .subHeaderContainer .filters .filterItem > span {
     font-weight: 400;
     font-size: 13px;
