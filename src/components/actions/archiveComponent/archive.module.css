@@ -137,12 +137,6 @@
   margin-top: 3px;
 }
 
-.mainView .viewHeader .viewTitle > span {
-  color: black;
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: black;
-}
-
 .mainView .viewHeader > span {
   cursor: pointer;
   color: #838790;
@@ -181,7 +175,7 @@
   cursor: pointer;
   max-height: 80vh;
   overflow-y: scroll;
-  background-color: #eff2f5;
+  background-color: #EEEEEE;;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
