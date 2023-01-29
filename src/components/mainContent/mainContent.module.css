@@ -135,6 +135,10 @@
     flex-direction: column;
   }
 
+  .mainContent .stage .stageMembersContainer .stageMember:last-of-type {
+    margin-bottom: 0;
+  }
+
   .mainContent .stage .stageMembersContainer .stageMember .memberTitle span {
     font-weight: 500;
     font-size: 12px;
