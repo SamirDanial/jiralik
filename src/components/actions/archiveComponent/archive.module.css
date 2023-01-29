@@ -17,8 +17,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 12px;
+  padding-left: 15px;
   padding-right: 13px;
   margin-bottom: 10px;
 }
@@ -194,7 +194,7 @@
   background-color: white;
   border-radius: 8px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
