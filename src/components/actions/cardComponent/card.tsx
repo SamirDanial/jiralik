@@ -1,6 +1,6 @@
 import { useState, Fragment } from "react";
 import styles from "./card.module.css";
-import { XMarkCIcon } from "@/components/icons/icons";
+import { PlusCIcon, XMarkCIcon } from "@/components/icons/icons";
 import ProjectNames from "../projectNamesComponent/projectNames";
 
 const Card = () => {
@@ -13,7 +13,7 @@ const Card = () => {
           <div className={styles.listSeparator}></div>
           <div className={styles.card}>
             <div className={styles.cardTitle}>
-              <span>Card Title</span>
+              <span>Card title</span>
               <span onClick={() => setCreateMode(false)}>
                 <XMarkCIcon width={24} height={24} />
               </span>
@@ -40,7 +40,7 @@ const Card = () => {
           className={styles.addNewItemContainer}
         >
           <div className={styles.addNewItem}>
-            <span>+</span>
+            <PlusCIcon width={18} height={18} />
             <span>Add Card</span>
           </div>
         </div>
